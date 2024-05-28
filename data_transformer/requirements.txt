@@ -1,4 +1,0 @@
-Flask==3.0.3
-nltk==3.8.1
-pandas==2.2.2
-python-dotenv==1.0.1
