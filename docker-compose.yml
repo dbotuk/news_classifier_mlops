@@ -11,7 +11,6 @@ x-airflow-common:
     AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
     AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
     CNN_SCRAPPER_URL: http://${CNN_SCRAPPER_HOST}:${CNN_SCRAPPER_PORT}
-    DATA_TRANSFORMER_URL: http://${DATA_TRANSFORMER_HOST}:${DATA_TRANSFORMER_PORT}
     DB_SERVER_URL: http://${DB_SERVER_HOST}:${DB_SERVER_PORT}
   volumes:
     - ./news_loader/dags:/opt/airflow/dags
@@ -32,15 +31,6 @@ services:
       - ${CNN_SCRAPPER_PORT}:${CNN_SCRAPPER_PORT}
     environment:
       - CNN_SCRAPPER_PORT=${CNN_SCRAPPER_PORT}
-
-  data_transformer:
-    container_name: data_transformer
-    image: data_transformer:1
-    build: ./data_transformer
-    ports:
-      - ${DATA_TRANSFORMER_PORT}:${DATA_TRANSFORMER_PORT}
-    environment:
-      - DATA_TRANSFORMER_PORT=${DATA_TRANSFORMER_PORT}
 
   db_server:
     container_name: db_server
@@ -128,7 +118,6 @@ services:
     restart: always
     depends_on:
       - cnn_scrapper
-      - data_transformer
       - db_server
 
   airflow-init:

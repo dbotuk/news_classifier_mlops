@@ -4,6 +4,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 from os import environ
+from utils import transformations
 
 default_args = {
     'owner': 'airflow',
@@ -12,7 +13,6 @@ default_args = {
 }
 
 cnn_scrapper_url = environ.get('CNN_SCRAPPER_URL')
-data_transformer_url = environ.get('DATA_TRANSFORMER_URL')
 db_server_url = environ.get('DB_SERVER_URL')
 
 
@@ -26,10 +26,15 @@ def transform(ti):
     # data_2 = pd.read_json(ti.xcom_pull(key='data_2'))
     # data_3 = pd.read_json(ti.xcom_pull(key='data_3'))
     # data = pd.concat([data_cnn, data_2, data_3], axis=0)
-    data = data_cnn
-    response = requests.post(data_transformer_url + '/transform', json={'data': data.to_json(), 'column': 'text'})
-    transformed_data = response.json()['data']
-    ti.xcom_push(key='transformed_data', value=transformed_data)
+    data_to_transform = data_cnn
+
+    data_to_transform['text'] = data_to_transform['text'].apply(transformations.remove_tags)
+    data_to_transform['text'] = data_to_transform['text'].apply(transformations.special_char)
+    data_to_transform['text'] = data_to_transform['text'].apply(transformations.convert_lower)
+    data_to_transform['text'] = data_to_transform['text'].apply(transformations.remove_stopwords)
+    data_to_transform['text'] = data_to_transform['text'].apply(transformations.lemmatize_word)
+
+    ti.xcom_push(key='transformed_data', value=data_to_transform.to_json())
 
 
 def save_into_db(ti):

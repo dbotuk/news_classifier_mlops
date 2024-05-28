@@ -5,6 +5,7 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime, timedelta
 from os import environ
+from utils import transformations
 
 
 default_args = {
@@ -25,9 +26,14 @@ def extract_data_from_csv(ti):
 
 def transform(ti):
     data = pd.read_json(ti.xcom_pull(key='init_data'))
-    response = requests.post(data_transformer_url + '/transform', json={'data': data.to_json(), 'column': 'text'})
-    transformed_data = response.json()['data']
-    ti.xcom_push(key='transformed_data', value=transformed_data)
+
+    data['text'] = data['text'].apply(transformations.remove_tags)
+    data['text'] = data['text'].apply(transformations.special_char)
+    data['text'] = data['text'].apply(transformations.convert_lower)
+    data['text'] = data['text'].apply(transformations.remove_stopwords)
+    data['text'] = data['text'].apply(transformations.lemmatize_word)
+
+    ti.xcom_push(key='transformed_data', value=data.to_json())
 
 
 def save_into_db(ti):
