@@ -1,56 +1,147 @@
-version: "3.9"
+version: "3"
+
+x-airflow-common:
+  &airflow-common
+  image: ${AIRFLOW_IMAGE_NAME:-apache/airflow:2.0.1}
+  environment:
+    &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+    AIRFLOW__CORE__FERNET_KEY: ''
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: 'true'
+    AIRFLOW__CORE__LOAD_EXAMPLES: 'false'
+    CNN_SCRAPPER_URL: http://${CNN_SCRAPPER_HOST}:${CNN_SCRAPPER_PORT}
+    DATA_TRANSFORMER_URL: http://${DATA_TRANSFORMER_HOST}:${DATA_TRANSFORMER_PORT}
+    DB_SERVER_URL: http://${DB_SERVER_HOST}:${DB_SERVER_PORT}
+  volumes:
+    - ./news_loader/dags:/opt/airflow/dags
+    - ./news_loader/logs:/opt/airflow/logs
+    - ./news_loader/plugins:/opt/airflow/plugins
+  platform: linux/amd64
+  user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-50000}"
+  depends_on:
+    postgres:
+      condition: service_healthy
+
 services:
-  rabbitmq:
-    image: rabbitmq:3.10.7-management
-    hostname: rabbitmq
-    restart: always
-    environment:
-      - RABBITMQ_DEFAULT_USER=rmuser
-      - RABBITMQ_DEFAULT_PASS=rmpassword
-      - RABBITMQ_SERVER_ADDITIONAL_ERL_ARGS=-rabbit log_levels [{connection,error},{default,error}] disk_free_limit 2147483648
-    volumes:
-      - ./rabbitmq:/var/lib/rabbitmq
+  cnn_scrapper:
+    container_name: cnn_scrapper
+    image: cnn_scrapper:1
+    build: ./scrappers/cnn_scrapper
     ports:
-      - 15672:15672
-      - 5672:5672
-    networks:
-      - spiderweb
-
-  consumer:
-    build: ./consumer
+      - ${CNN_SCRAPPER_PORT}:${CNN_SCRAPPER_PORT}
     environment:
-      - RABBIT_MQ_HOST=rabbitmq
-      - RABBITMQ_USER=rmuser
-      - RABBITMQ_PASS=rmpassword
-      - QUEUE_NAME=meassages
+      - CNN_SCRAPPER_PORT=${CNN_SCRAPPER_PORT}
+
+  data_transformer:
+    container_name: data_transformer
+    image: data_transformer:1
+    build: ./data_transformer
+    ports:
+      - ${DATA_TRANSFORMER_PORT}:${DATA_TRANSFORMER_PORT}
+    environment:
+      - DATA_TRANSFORMER_PORT=${DATA_TRANSFORMER_PORT}
+
+  db_server:
+    container_name: db_server
+    image: db_server:1
+    build: ./db_server
+    ports:
+      - ${DB_SERVER_PORT}:${DB_SERVER_PORT}
+    environment:
+      - DB_URL=postgresql://postgres:postgres@flask_db:5432/postgres
+      - DB_SERVER_PORT=${DB_SERVER_PORT}
     depends_on:
-      - rabbitmq
-    networks:
-      - spiderweb
-    restart: always
-    deploy:
-      replicas: 2
+      - flask_db
 
-  producer:
-    build:
-      context: ./producer
-      dockerfile: Dockerfile
+  ml_server:
+    container_name: ml_server
+    image: ml_server:1
+    build: ./ml_server
     ports:
-      - "8000:5000"
+      - ${ML_SERVER_PORT}:${ML_SERVER_PORT}
     environment:
-      - RABBIT_MQ_HOST=rabbitmq
-      - RABBITMQ_USER=rmuser
-      - RABBITMQ_PASS=rmpassword
-      - QUEUE_NAME=meassages
-    scale: 1
-    networks:
-      - spiderweb
-      
-networks:
-  spiderweb:
-    driver: bridge
-# links, depends_on
+      - DB_SERVER_URL=http://${DB_SERVER_HOST}:${DB_SERVER_PORT}
+      - MINIO_ENDPOINT=${MINIO_HOST}:${MINIO_SERVER_PORT}
+      - MINIO_ACCESS_KEY=minio
+      - MINIO_SECRET_KEY=miniopass
+      - MINIO_BUCKET=bert
+      - ML_SERVER_PORT=${ML_SERVER_PORT}
+    depends_on:
+      - minio
+      - db_server
+
+  flask_db:
+    container_name: flask_db
+    image: postgres:12
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=postgres
+    volumes:
+      -  pgdata:/var/lib/postgresql/data
+
+  minio:
+    image: minio/minio:latest
+    container_name: minio
+    ports:
+      - ${MINIO_SERVER_PORT}:${MINIO_SERVER_PORT}
+      - ${MINIO_UI_PORT}:${MINIO_UI_PORT}
+    environment:
+      - MINIO_ROOT_USER=minio
+      - MINIO_ROOT_PASSWORD=miniopass
+    volumes:
+      - minio-data:/data
+    command: server /data --console-address ":9001"
+
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "airflow" ]
+      interval: 5s
+      retries: 5
+    restart: always
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: [ "CMD", "curl", "--fail", "http://localhost:8080/health" ]
+      interval: 10s
+      timeout: 10s
+      retries: 5
+    restart: always
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    restart: always
+    depends_on:
+      - cnn_scrapper
+      - data_transformer
+      - db_server
+
+  airflow-init:
+    <<: *airflow-common
+    command: version
+    environment:
+      <<: *airflow-common-env
+      _AIRFLOW_DB_UPGRADE: 'true'
+      _AIRFLOW_WWW_USER_CREATE: 'true'
+      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
+      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
 
 volumes:
-  db-data:
-
+  pgdata: {}
+  minio-data:
+  postgres-db-volume:

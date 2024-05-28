@@ -1,14 +1,14 @@
 FROM python:3.11-slim-bookworm
 
-WORKDIR /db_server
+WORKDIR /data_transformer
 
 COPY requirements.txt requirements.txt
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-ADD . /db_server
+ADD . /data_transformer
 
-EXPOSE 4000
+EXPOSE ${DATA_TRANSFORMER_PORT}
 
 ENTRYPOINT [ "python" ] 
-CMD ["-u", "db_server.py"]
+CMD ["-u", "data_transformer.py"]

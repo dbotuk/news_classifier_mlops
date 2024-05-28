@@ -1,90 +1,73 @@
+import re
+import nltk
+import pandas as pd
 from flask import Flask, jsonify, request, make_response
-from flask_sqlalchemy import SQLAlchemy
+from nltk.corpus import stopwords
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer
 from os import environ
 
+
+nltk.download('stopwords')
+nltk.download('wordnet')
+nltk.download('punkt')
+
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = environ.get('DB_URL')
-db = SQLAlchemy(app)
 
 
-class News(db.Model):
-    __tablename__ = 'news'
+@app.route('/transform', methods=['POST'])
+def transform():
+    request_data = request.get_json()
+    data_to_transform = pd.read_json(request_data['data'])
+    column_to_transform = request_data['column']
 
-    id = db.Column(db.Integer, primary_key=True)
-    text = db.Column(db.String(), nullable=False)
-    label = db.Column(db.String(), nullable=False)
+    app.logger.info("Transforming data started.")
 
-    def json(self):
-        return {'id': self.id, 'text': self.text, 'label': self.label}
+    app.logger.info("Removing tags ...")
+    data_to_transform[column_to_transform] = data_to_transform[column_to_transform].apply(remove_tags)
+    app.logger.info("Removing special chars ...")
+    data_to_transform[column_to_transform] = data_to_transform[column_to_transform].apply(special_char)
+    app.logger.info("Converting to lower case ...")
+    data_to_transform[column_to_transform] = data_to_transform[column_to_transform].apply(convert_lower)
+    app.logger.info("Removing stopwords ...")
+    data_to_transform[column_to_transform] = data_to_transform[column_to_transform].apply(remove_stopwords)
+    app.logger.info("Lemmatizing words ...")
+    data_to_transform[column_to_transform] = data_to_transform[column_to_transform].apply(lemmatize_word)
 
+    app.logger.info("Transforming data finished.")
 
-with app.app_context():
-    db.create_all()
-
-
-@app.route('/test', methods=['GET'])
-def test():
-    return make_response(jsonify({"message": "server started"}), 201)
-
-@app.route('/add_news', methods=['POST'])
-def create_news():
-    try:
-        data = request.get_json()
-        new_news = News(text=data['text'], label=data['label'])
-        db.session.add(new_news)
-        db.session.commit()
-        return make_response(jsonify({"message": "news created"}), 201)
-    except Exception as e:
-        return make_response(jsonify({"message": "error creating news"}), 500)
+    return make_response(jsonify({"data": data_to_transform.to_json()}), 200)
 
 
-@app.route('/news', methods=['GET'])
-def get_all_news():
-    try:
-        news_list = News.query.all()
-        return make_response(jsonify({"news": [news.json() for news in news_list]}), 200)
-    except Exception as e:
-        return make_response(jsonify({"message": "error getting news"}), 500)
+def remove_tags(text):
+    remove = re.compile(r'')
+    return re.sub(remove, '', text)
 
 
-@app.route('/news/<int:id>', methods=['GET'])
-def get_news(id):
-    try:
-        news = News.query.filter_by(id=id).first()
-        if news:
-            return make_response(jsonify({"news": news.json()}), 200)
-        return make_response(jsonify({"message": "news not found"}), 404)
-    except Exception as e:
-        return make_response(jsonify({"message": "error getting news"}), 500)
+def special_char(text):
+    reviews = ''
+    for x in text:
+        if x.isalnum():
+            reviews = reviews + x
+        else:
+            reviews = reviews + ' '
+    return reviews
 
 
-@app.route('/update_news/<int:id>', methods=['POST'])
-def update_news(id):
-    try:
-        news = News.query.filter_by(id=id).first()
-        if news:
-            data = request.get_json()
-            news.text = data['text']
-            news.label = data['label']
-            db.session.commit()
-            return make_response(jsonify({"message": "news updated"}), 200)
-        return make_response(jsonify({"message": "news not found"}), 404)
-    except Exception as e:
-        return make_response(jsonify({"message": "error updating news"}), 500)
+def convert_lower(text):
+    return text.lower()
 
 
-@app.route('/delete_news/<int:id>', methods=['POST'])
-def delete_news(id):
-    try:
-        news = News.query.filter_by(id=id).first()
-        if news:
-            db.session.delete(news)
-            db.session.commit()
-            return make_response(jsonify({"message": "news deleted"}), 200)
-        return make_response(jsonify({"message": "news not found"}), 404)
-    except Exception as e:
-        return make_response(jsonify({"message": "error deleting news"}), 500)
+def remove_stopwords(text):
+    stop_words = set(stopwords.words('english'))
+    words = word_tokenize(text)
+    return [x for x in words if x not in stop_words]
+
+
+def lemmatize_word(text):
+    wordnet = WordNetLemmatizer()
+    return " ".join([wordnet.lemmatize(word) for word in text])
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='0.0.0.0', port=4000)
+    app.run(debug=True, host='0.0.0.0', port=environ.get('DATA_TRANSFORMER_PORT'))
