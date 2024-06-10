@@ -1,0 +1,207 @@
+[2024-05-26 21:19:23,375] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-26 21:19:23,400] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-26 21:19:23,400] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:19:23,400] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 21:19:23,400] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:19:23,408] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-05-24T02:00:00+00:00
+[2024-05-26 21:19:23,412] {standard_task_runner.py:52} INFO - Started process 174 to run task
+[2024-05-26 21:19:23,416] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-05-24T02:00:00+00:00', '--job-id', '391', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpb_ihy6ur', '--error-file', '/tmp/tmpv0paflmp']
+[2024-05-26 21:19:23,436] {standard_task_runner.py:77} INFO - Job 391: Subtask extract_data_from_csv
+[2024-05-26 21:19:23,483] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [running]> on host ff5273ee61d8
+[2024-05-26 21:19:23,513] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-24T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-24T02:00:00+00:00
+[2024-05-26 21:19:23,519] {taskinstance.py:1455} ERROR - [Errno 2] No such file or directory: 'init_dataset.csv'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/load_init_data.py", line 19, in extract_data_from_csv
+    data = pd.read_csv("init_dataset.csv")
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: 'init_dataset.csv'
+[2024-05-26 21:19:23,524] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240524T020000, start_date=20240526T211923, end_date=20240526T211923
+[2024-05-26 21:19:23,564] {local_task_job.py:146} INFO - Task exited with return code 1
+[2024-05-26 21:20:57,514] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-26 21:20:57,527] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-26 21:20:57,527] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:20:57,527] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 21:20:57,528] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:20:57,535] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-05-24T02:00:00+00:00
+[2024-05-26 21:20:57,540] {standard_task_runner.py:52} INFO - Started process 175 to run task
+[2024-05-26 21:20:57,545] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-05-24T02:00:00+00:00', '--job-id', '394', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpcbcxyvuf', '--error-file', '/tmp/tmp_23t1mz1']
+[2024-05-26 21:20:57,548] {standard_task_runner.py:77} INFO - Job 394: Subtask extract_data_from_csv
+[2024-05-26 21:20:57,580] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [running]> on host ff5273ee61d8
+[2024-05-26 21:20:57,608] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-24T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-24T02:00:00+00:00
+[2024-05-26 21:20:57,616] {taskinstance.py:1455} ERROR - [Errno 2] No such file or directory: '../../init_dataset.csv'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/load_init_data.py", line 19, in extract_data_from_csv
+    data = pd.read_csv("../../init_dataset.csv")
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: '../../init_dataset.csv'
+[2024-05-26 21:20:57,621] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240524T020000, start_date=20240526T212057, end_date=20240526T212057
+[2024-05-26 21:20:57,644] {local_task_job.py:146} INFO - Task exited with return code 1
+[2024-05-26 21:22:12,998] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-26 21:22:13,009] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-26 21:22:13,009] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:22:13,010] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 21:22:13,010] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:22:13,016] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-05-24T02:00:00+00:00
+[2024-05-26 21:22:13,020] {standard_task_runner.py:52} INFO - Started process 173 to run task
+[2024-05-26 21:22:13,024] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-05-24T02:00:00+00:00', '--job-id', '396', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpyklzb57x', '--error-file', '/tmp/tmph6qlkho7']
+[2024-05-26 21:22:13,027] {standard_task_runner.py:77} INFO - Job 396: Subtask extract_data_from_csv
+[2024-05-26 21:22:13,065] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [running]> on host ff5273ee61d8
+[2024-05-26 21:22:13,099] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-24T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-24T02:00:00+00:00
+[2024-05-26 21:22:13,104] {taskinstance.py:1455} ERROR - [Errno 2] No such file or directory: 'init_dataset.csv'
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/load_init_data.py", line 19, in extract_data_from_csv
+    data = pd.read_csv("init_dataset.csv")
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 688, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 454, in _read
+    parser = TextFileReader(fp_or_buf, **kwds)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 948, in __init__
+    self._make_engine(self.engine)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 1180, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/airflow/.local/lib/python3.6/site-packages/pandas/io/parsers.py", line 2010, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 382, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 674, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: [Errno 2] No such file or directory: 'init_dataset.csv'
+[2024-05-26 21:22:13,110] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240524T020000, start_date=20240526T212213, end_date=20240526T212213
+[2024-05-26 21:22:13,165] {local_task_job.py:146} INFO - Task exited with return code 1
+[2024-05-27 21:19:26,134] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-27 21:19:26,167] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-27 21:19:26,168] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-27 21:19:26,168] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-27 21:19:26,169] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-27 21:19:26,184] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-05-24T02:00:00+00:00
+[2024-05-27 21:19:26,200] {standard_task_runner.py:52} INFO - Started process 185 to run task
+[2024-05-27 21:19:26,241] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-05-24T02:00:00+00:00', '--job-id', '497', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpvrrdlk3x', '--error-file', '/tmp/tmp7fm80nmd']
+[2024-05-27 21:19:26,266] {standard_task_runner.py:77} INFO - Job 497: Subtask extract_data_from_csv
+[2024-05-27 21:19:26,368] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [running]> on host 1f334d963743
+[2024-05-27 21:19:26,405] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-24T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-24T02:00:00+00:00
+[2024-05-27 21:19:26,924] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-27 21:19:26,936] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240524T020000, start_date=20240527T211926, end_date=20240527T211926
+[2024-05-27 21:19:26,961] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-27 21:19:26,996] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-05-28 16:24:17,465] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-28 16:24:17,484] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-05-28 16:24:17,485] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-28 16:24:17,485] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-28 16:24:17,485] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-28 16:24:17,494] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-05-24T02:00:00+00:00
+[2024-05-28 16:24:17,498] {standard_task_runner.py:52} INFO - Started process 198 to run task
+[2024-05-28 16:24:17,510] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-05-24T02:00:00+00:00', '--job-id', '507', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpsb9oa_tw', '--error-file', '/tmp/tmpl5hoj1ql']
+[2024-05-28 16:24:17,513] {standard_task_runner.py:77} INFO - Job 507: Subtask extract_data_from_csv
+[2024-05-28 16:24:17,561] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [running]> on host a3c9b0e21f74
+[2024-05-28 16:24:17,603] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-24T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-24T02:00:00+00:00
+[2024-05-28 16:24:18,027] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-28 16:24:18,039] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240524T020000, start_date=20240528T162417, end_date=20240528T162418
+[2024-05-28 16:24:18,115] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-28 16:24:18,140] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-06-09 14:01:21,100] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-06-09 14:01:21,167] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [queued]>
+[2024-06-09 14:01:21,179] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 14:01:21,182] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-06-09 14:01:21,189] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 14:01:21,230] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-05-24T02:00:00+00:00
+[2024-06-09 14:01:21,250] {standard_task_runner.py:52} INFO - Started process 186 to run task
+[2024-06-09 14:01:21,267] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-05-24T02:00:00+00:00', '--job-id', '9', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpr3qnq0ur', '--error-file', '/tmp/tmprk0x6mx2']
+[2024-06-09 14:01:21,278] {standard_task_runner.py:77} INFO - Job 9: Subtask extract_data_from_csv
+[2024-06-09 14:01:21,418] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-05-24T02:00:00+00:00 [running]> on host 97b873bf6d4d
+[2024-06-09 14:01:21,624] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-24T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-24T02:00:00+00:00
+[2024-06-09 14:01:23,103] {python.py:118} INFO - Done. Returned value was: None
+[2024-06-09 14:01:23,290] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240524T020000, start_date=20240609T140121, end_date=20240609T140123
+[2024-06-09 14:01:23,479] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-09 14:01:23,550] {local_task_job.py:146} INFO - Task exited with return code 0

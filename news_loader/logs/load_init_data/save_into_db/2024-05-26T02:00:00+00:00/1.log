@@ -1,0 +1,66 @@
+[2024-05-27 02:02:13,619] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.save_into_db 2024-05-26T02:00:00+00:00 [queued]>
+[2024-05-27 02:02:13,632] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.save_into_db 2024-05-26T02:00:00+00:00 [queued]>
+[2024-05-27 02:02:13,632] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-27 02:02:13,633] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-27 02:02:13,633] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-27 02:02:13,640] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): save_into_db> on 2024-05-26T02:00:00+00:00
+[2024-05-27 02:02:13,643] {standard_task_runner.py:52} INFO - Started process 1159 to run task
+[2024-05-27 02:02:13,650] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'save_into_db', '2024-05-26T02:00:00+00:00', '--job-id', '470', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpw7awc9z7', '--error-file', '/tmp/tmprriypm61']
+[2024-05-27 02:02:13,653] {standard_task_runner.py:77} INFO - Job 470: Subtask save_into_db
+[2024-05-27 02:02:13,681] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.save_into_db 2024-05-26T02:00:00+00:00 [running]> on host 1f334d963743
+[2024-05-27 02:02:13,708] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=save_into_db
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-26T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-26T02:00:00+00:00
+[2024-05-27 02:02:14,080] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-27 02:02:14,092] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=save_into_db, execution_date=20240526T020000, start_date=20240527T020213, end_date=20240527T020214
+[2024-05-27 02:02:14,116] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-27 02:02:14,160] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-05-28 16:24:31,721] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.save_into_db 2024-05-26T02:00:00+00:00 [queued]>
+[2024-05-28 16:24:31,729] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.save_into_db 2024-05-26T02:00:00+00:00 [queued]>
+[2024-05-28 16:24:31,731] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-28 16:24:31,731] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-28 16:24:31,731] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-28 16:24:31,742] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): save_into_db> on 2024-05-26T02:00:00+00:00
+[2024-05-28 16:24:31,746] {standard_task_runner.py:52} INFO - Started process 215 to run task
+[2024-05-28 16:24:31,750] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'save_into_db', '2024-05-26T02:00:00+00:00', '--job-id', '517', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpkn9anq0g', '--error-file', '/tmp/tmpknlf_pyu']
+[2024-05-28 16:24:31,753] {standard_task_runner.py:77} INFO - Job 517: Subtask save_into_db
+[2024-05-28 16:24:31,787] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.save_into_db 2024-05-26T02:00:00+00:00 [running]> on host a3c9b0e21f74
+[2024-05-28 16:24:31,818] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=save_into_db
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-26T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-26T02:00:00+00:00
+[2024-05-28 16:24:32,051] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-28 16:24:32,062] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=save_into_db, execution_date=20240526T020000, start_date=20240528T162431, end_date=20240528T162432
+[2024-05-28 16:24:32,083] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-28 16:24:32,095] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-06-09 14:02:30,570] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.save_into_db 2024-05-26T02:00:00+00:00 [queued]>
+[2024-06-09 14:02:30,786] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.save_into_db 2024-05-26T02:00:00+00:00 [queued]>
+[2024-06-09 14:02:30,793] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 14:02:30,793] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-06-09 14:02:30,794] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 14:02:30,853] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): save_into_db> on 2024-05-26T02:00:00+00:00
+[2024-06-09 14:02:30,993] {standard_task_runner.py:52} INFO - Started process 273 to run task
+[2024-06-09 14:02:31,017] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'save_into_db', '2024-05-26T02:00:00+00:00', '--job-id', '46', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpu_jt1i0v', '--error-file', '/tmp/tmp1wp55x93']
+[2024-06-09 14:02:31,099] {standard_task_runner.py:77} INFO - Job 46: Subtask save_into_db
+[2024-06-09 14:02:31,403] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.save_into_db 2024-05-26T02:00:00+00:00 [running]> on host 97b873bf6d4d
+[2024-06-09 14:02:31,583] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=save_into_db
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-26T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-26T02:00:00+00:00
+[2024-06-09 14:02:32,409] {python.py:118} INFO - Done. Returned value was: None
+[2024-06-09 14:02:32,484] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=save_into_db, execution_date=20240526T020000, start_date=20240609T140230, end_date=20240609T140232
+[2024-06-09 14:02:32,600] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-06-09 14:02:32,663] {local_task_job.py:146} INFO - Task exited with return code 0

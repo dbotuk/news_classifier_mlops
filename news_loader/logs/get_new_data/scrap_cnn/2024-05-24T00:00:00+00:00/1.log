@@ -1,0 +1,87 @@
+[2024-05-26 16:32:54,451] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-24T00:00:00+00:00 [queued]>
+[2024-05-26 16:32:54,459] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-24T00:00:00+00:00 [queued]>
+[2024-05-26 16:32:54,460] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:32:54,460] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 16:32:54,460] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:32:54,469] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): scrap_cnn> on 2024-05-24T00:00:00+00:00
+[2024-05-26 16:32:54,473] {standard_task_runner.py:52} INFO - Started process 186 to run task
+[2024-05-26 16:32:54,476] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'scrap_cnn', '2024-05-24T00:00:00+00:00', '--job-id', '186', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmpqxnbbbqj', '--error-file', '/tmp/tmpkefiswrn']
+[2024-05-26 16:32:54,479] {standard_task_runner.py:77} INFO - Job 186: Subtask scrap_cnn
+[2024-05-26 16:32:54,534] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.scrap_cnn 2024-05-24T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 16:32:54,569] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=scrap_cnn
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-24T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-24T00:00:00+00:00
+[2024-05-26 16:35:08,809] {local_task_job.py:77} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-05-26 16:35:09,026] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 186
+[2024-05-26 16:35:09,098] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-05-26 16:35:09,225] {process_utils.py:66} INFO - Process psutil.Process(pid=186, status='terminated', exitcode=1, started='16:32:54') (186) terminated with exit code 1
+[2024-05-26 17:11:10,384] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-24T00:00:00+00:00 [queued]>
+[2024-05-26 17:11:10,395] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-24T00:00:00+00:00 [queued]>
+[2024-05-26 17:11:10,396] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:11:10,397] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 17:11:10,397] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:11:10,422] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): scrap_cnn> on 2024-05-24T00:00:00+00:00
+[2024-05-26 17:11:10,436] {standard_task_runner.py:52} INFO - Started process 183 to run task
+[2024-05-26 17:11:10,458] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'scrap_cnn', '2024-05-24T00:00:00+00:00', '--job-id', '321', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmpi99yzeil', '--error-file', '/tmp/tmpf_sf5npe']
+[2024-05-26 17:11:10,463] {standard_task_runner.py:77} INFO - Job 321: Subtask scrap_cnn
+[2024-05-26 17:11:10,523] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.scrap_cnn 2024-05-24T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 17:11:10,561] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=scrap_cnn
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-24T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-24T00:00:00+00:00
+[2024-05-26 17:12:34,432] {local_task_job.py:77} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-05-26 17:12:34,502] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 183
+[2024-05-26 17:12:34,735] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-05-26 17:12:34,944] {taskinstance.py:1455} ERROR - Task received SIGTERM signal
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_new_data.py", line 17, in scrap_cnn
+    response = requests.get('http://cnn_scrapper:7010/extract_news')
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1383, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+  File "/usr/local/lib/python3.6/http/client.py", line 1525, in __init__
+    def __init__(self, *pos, **kw):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1241, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-05-26 17:12:35,007] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=get_new_data, task_id=scrap_cnn, execution_date=20240524T000000, start_date=20240526T171110, end_date=20240526T171235
+[2024-05-26 17:12:35,184] {process_utils.py:66} INFO - Process psutil.Process(pid=183, status='terminated', exitcode=1, started='17:11:09') (183) terminated with exit code 1

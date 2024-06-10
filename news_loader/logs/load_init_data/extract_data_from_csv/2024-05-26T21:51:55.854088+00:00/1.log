@@ -1,0 +1,22 @@
+[2024-05-26 21:51:56,727] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-26T21:51:55.854088+00:00 [queued]>
+[2024-05-26 21:51:56,737] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-05-26T21:51:55.854088+00:00 [queued]>
+[2024-05-26 21:51:56,737] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:51:56,738] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 21:51:56,738] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:51:56,743] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-05-26T21:51:55.854088+00:00
+[2024-05-26 21:51:56,747] {standard_task_runner.py:52} INFO - Started process 227 to run task
+[2024-05-26 21:51:56,751] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-05-26T21:51:55.854088+00:00', '--job-id', '425', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpmunschba', '--error-file', '/tmp/tmpq44eugv2']
+[2024-05-26 21:51:56,753] {standard_task_runner.py:77} INFO - Job 425: Subtask extract_data_from_csv
+[2024-05-26 21:51:56,779] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-05-26T21:51:55.854088+00:00 [running]> on host 9c777ac19e23
+[2024-05-26 21:51:56,809] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-26T21:51:55.854088+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-05-26T21:51:55.854088+00:00
+[2024-05-26 21:51:57,121] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 21:51:57,129] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240526T215155, start_date=20240526T215156, end_date=20240526T215157
+[2024-05-26 21:51:57,151] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 21:51:57,182] {local_task_job.py:146} INFO - Task exited with return code 0

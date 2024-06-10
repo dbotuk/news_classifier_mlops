@@ -6,6 +6,7 @@ from datetime import datetime, timedelta
 from os import environ
 from utils import transformations
 
+
 default_args = {
     'owner': 'airflow',
     'retries': 5,
@@ -46,7 +47,7 @@ with DAG(
     dag_id='get_new_data',
     default_args=default_args,
     description='Extracts new data from the News Websites and Loads to DB',
-    start_date=datetime(2024, 5, 24,2),
+    start_date=datetime(2024, 6, 7, 2),
     schedule_interval='@daily'
 ) as dag:
     scrap_cnn = PythonOperator(

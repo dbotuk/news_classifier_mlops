@@ -45,7 +45,7 @@ with DAG(
     dag_id='load_init_data',
     default_args=default_args,
     description='Extracts init data from csv file and saves into DB',
-    start_date=datetime(2024, 5, 24,2)
+    start_date=datetime(2024, 6, 8, 2)
 ) as dag:
     extract_data_from_csv = PythonOperator(
         task_id='extract_data_from_csv',

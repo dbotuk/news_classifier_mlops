@@ -1,0 +1,463 @@
+[2024-05-28 16:21:00,776] {scheduler_job.py:182} INFO - Started process (PID=162) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:21:00,778] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:21:00,779] {logging_mixin.py:104} INFO - [2024-05-28 16:21:00,779] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:21:01,262] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:21:01,281] {logging_mixin.py:104} INFO - [2024-05-28 16:21:01,281] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:21:01,298] {logging_mixin.py:104} INFO - [2024-05-28 16:21:01,298] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:21:01,306] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.534 seconds
+[2024-05-28 16:21:31,594] {scheduler_job.py:182} INFO - Started process (PID=172) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:21:31,596] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:21:31,597] {logging_mixin.py:104} INFO - [2024-05-28 16:21:31,597] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:21:32,045] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:21:32,074] {logging_mixin.py:104} INFO - [2024-05-28 16:21:32,074] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:21:32,092] {logging_mixin.py:104} INFO - [2024-05-28 16:21:32,092] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:21:32,100] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.510 seconds
+[2024-05-28 16:22:02,318] {scheduler_job.py:182} INFO - Started process (PID=182) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:22:02,320] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:22:02,321] {logging_mixin.py:104} INFO - [2024-05-28 16:22:02,321] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:22:02,694] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:22:02,713] {logging_mixin.py:104} INFO - [2024-05-28 16:22:02,713] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:22:02,730] {logging_mixin.py:104} INFO - [2024-05-28 16:22:02,730] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:22:02,735] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.423 seconds
+[2024-05-28 16:22:32,943] {scheduler_job.py:182} INFO - Started process (PID=192) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:22:32,945] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:22:32,946] {logging_mixin.py:104} INFO - [2024-05-28 16:22:32,946] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:22:33,297] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:22:33,331] {logging_mixin.py:104} INFO - [2024-05-28 16:22:33,331] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:22:33,349] {logging_mixin.py:104} INFO - [2024-05-28 16:22:33,349] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:22:33,354] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.415 seconds
+[2024-05-28 16:23:03,679] {scheduler_job.py:182} INFO - Started process (PID=164) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:23:03,680] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:23:03,684] {logging_mixin.py:104} INFO - [2024-05-28 16:23:03,684] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:23:04,670] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:23:04,686] {logging_mixin.py:104} INFO - [2024-05-28 16:23:04,686] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:23:04,701] {logging_mixin.py:104} INFO - [2024-05-28 16:23:04,700] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:23:04,705] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 1.030 seconds
+[2024-05-28 16:23:34,992] {scheduler_job.py:182} INFO - Started process (PID=173) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:23:34,994] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:23:34,996] {logging_mixin.py:104} INFO - [2024-05-28 16:23:34,995] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:23:35,366] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:23:35,384] {logging_mixin.py:104} INFO - [2024-05-28 16:23:35,384] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:23:35,400] {logging_mixin.py:104} INFO - [2024-05-28 16:23:35,400] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:23:35,406] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.419 seconds
+[2024-05-28 16:24:05,686] {scheduler_job.py:182} INFO - Started process (PID=183) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:24:05,689] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:24:05,690] {logging_mixin.py:104} INFO - [2024-05-28 16:24:05,690] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:24:06,092] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:24:06,113] {logging_mixin.py:104} INFO - [2024-05-28 16:24:06,113] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:24:06,131] {logging_mixin.py:104} INFO - [2024-05-28 16:24:06,130] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:24:06,142] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.460 seconds
+[2024-05-28 16:24:36,403] {scheduler_job.py:182} INFO - Started process (PID=217) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:24:36,405] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:24:36,406] {logging_mixin.py:104} INFO - [2024-05-28 16:24:36,406] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:24:36,742] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:24:36,771] {logging_mixin.py:104} INFO - [2024-05-28 16:24:36,771] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:24:36,796] {logging_mixin.py:104} INFO - [2024-05-28 16:24:36,796] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-28 00:00:00+00:00
+[2024-05-28 16:24:36,803] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.402 seconds
+[2024-05-28 16:25:06,993] {scheduler_job.py:182} INFO - Started process (PID=227) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:25:06,996] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:25:06,999] {logging_mixin.py:104} INFO - [2024-05-28 16:25:06,999] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:25:07,601] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:25:07,631] {logging_mixin.py:104} INFO - [2024-05-28 16:25:07,630] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:25:07,654] {logging_mixin.py:104} INFO - [2024-05-28 16:25:07,654] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-28 00:00:00+00:00
+[2024-05-28 16:25:07,665] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.688 seconds
+[2024-05-28 16:25:37,918] {scheduler_job.py:182} INFO - Started process (PID=238) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:25:37,920] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:25:37,920] {logging_mixin.py:104} INFO - [2024-05-28 16:25:37,920] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:25:38,345] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:25:38,368] {logging_mixin.py:104} INFO - [2024-05-28 16:25:38,368] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:25:38,392] {logging_mixin.py:104} INFO - [2024-05-28 16:25:38,392] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-28 00:00:00+00:00
+[2024-05-28 16:25:38,399] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.485 seconds
+[2024-05-28 16:25:57,495] {scheduler_job.py:182} INFO - Started process (PID=164) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:25:57,497] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:25:57,498] {logging_mixin.py:104} INFO - [2024-05-28 16:25:57,498] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:25:57,887] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:25:57,908] {logging_mixin.py:104} INFO - [2024-05-28 16:25:57,907] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:25:57,915] {logging_mixin.py:104} INFO - [2024-05-28 16:25:57,915] {dag.py:1837} INFO - Creating ORM DAG for get_new_data
+[2024-05-28 16:25:57,925] {logging_mixin.py:104} INFO - [2024-05-28 16:25:57,925] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:25:57,933] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.441 seconds
+[2024-05-28 16:26:28,213] {scheduler_job.py:182} INFO - Started process (PID=173) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:26:28,222] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:26:28,227] {logging_mixin.py:104} INFO - [2024-05-28 16:26:28,226] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:26:28,613] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:26:28,639] {logging_mixin.py:104} INFO - [2024-05-28 16:26:28,639] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:26:28,654] {logging_mixin.py:104} INFO - [2024-05-28 16:26:28,654] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:26:28,659] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.459 seconds
+[2024-05-28 16:26:59,039] {scheduler_job.py:182} INFO - Started process (PID=183) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:26:59,041] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:26:59,043] {logging_mixin.py:104} INFO - [2024-05-28 16:26:59,042] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:26:59,422] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:26:59,442] {logging_mixin.py:104} INFO - [2024-05-28 16:26:59,442] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:26:59,458] {logging_mixin.py:104} INFO - [2024-05-28 16:26:59,458] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:26:59,463] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.433 seconds
+[2024-05-28 16:27:29,834] {scheduler_job.py:182} INFO - Started process (PID=193) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:27:29,838] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:27:29,839] {logging_mixin.py:104} INFO - [2024-05-28 16:27:29,839] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:27:30,251] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:27:30,271] {logging_mixin.py:104} INFO - [2024-05-28 16:27:30,271] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:27:30,286] {logging_mixin.py:104} INFO - [2024-05-28 16:27:30,286] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:27:30,292] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.467 seconds
+[2024-05-28 16:28:00,676] {scheduler_job.py:182} INFO - Started process (PID=203) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:28:00,680] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:28:00,684] {logging_mixin.py:104} INFO - [2024-05-28 16:28:00,684] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:28:01,122] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:28:01,147] {logging_mixin.py:104} INFO - [2024-05-28 16:28:01,147] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:28:01,165] {logging_mixin.py:104} INFO - [2024-05-28 16:28:01,165] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:28:01,171] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.507 seconds
+[2024-05-28 16:28:31,461] {scheduler_job.py:182} INFO - Started process (PID=213) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:28:31,462] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:28:31,464] {logging_mixin.py:104} INFO - [2024-05-28 16:28:31,464] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:28:31,813] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:28:31,830] {logging_mixin.py:104} INFO - [2024-05-28 16:28:31,830] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:28:31,847] {logging_mixin.py:104} INFO - [2024-05-28 16:28:31,847] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:28:31,852] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.396 seconds
+[2024-05-28 16:29:02,200] {scheduler_job.py:182} INFO - Started process (PID=223) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:29:02,202] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:29:02,203] {logging_mixin.py:104} INFO - [2024-05-28 16:29:02,203] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:29:02,576] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:29:02,595] {logging_mixin.py:104} INFO - [2024-05-28 16:29:02,595] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:29:02,611] {logging_mixin.py:104} INFO - [2024-05-28 16:29:02,611] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:29:02,616] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.422 seconds
+[2024-05-28 16:29:32,983] {scheduler_job.py:182} INFO - Started process (PID=234) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:29:32,984] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:29:32,985] {logging_mixin.py:104} INFO - [2024-05-28 16:29:32,985] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:29:33,286] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:29:33,300] {logging_mixin.py:104} INFO - [2024-05-28 16:29:33,300] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:29:33,313] {logging_mixin.py:104} INFO - [2024-05-28 16:29:33,313] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:29:33,318] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.339 seconds
+[2024-05-28 16:30:03,656] {scheduler_job.py:182} INFO - Started process (PID=243) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:30:03,657] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:30:03,658] {logging_mixin.py:104} INFO - [2024-05-28 16:30:03,658] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:30:04,038] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:30:04,058] {logging_mixin.py:104} INFO - [2024-05-28 16:30:04,058] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:30:04,074] {logging_mixin.py:104} INFO - [2024-05-28 16:30:04,074] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:30:04,079] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.429 seconds
+[2024-05-28 16:30:34,384] {scheduler_job.py:182} INFO - Started process (PID=254) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:30:34,385] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:30:34,386] {logging_mixin.py:104} INFO - [2024-05-28 16:30:34,386] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:30:34,695] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:30:34,709] {logging_mixin.py:104} INFO - [2024-05-28 16:30:34,709] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:30:34,723] {logging_mixin.py:104} INFO - [2024-05-28 16:30:34,723] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:30:34,728] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.347 seconds
+[2024-05-28 16:31:05,161] {scheduler_job.py:182} INFO - Started process (PID=263) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:31:05,164] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:31:05,166] {logging_mixin.py:104} INFO - [2024-05-28 16:31:05,166] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:31:05,549] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:31:05,568] {logging_mixin.py:104} INFO - [2024-05-28 16:31:05,568] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:31:05,583] {logging_mixin.py:104} INFO - [2024-05-28 16:31:05,583] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:31:05,588] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.436 seconds
+[2024-05-28 16:31:35,980] {scheduler_job.py:182} INFO - Started process (PID=273) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:31:35,984] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:31:35,986] {logging_mixin.py:104} INFO - [2024-05-28 16:31:35,985] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:31:36,396] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:31:36,418] {logging_mixin.py:104} INFO - [2024-05-28 16:31:36,418] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:31:36,434] {logging_mixin.py:104} INFO - [2024-05-28 16:31:36,433] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:31:36,439] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.468 seconds
+[2024-05-28 16:32:06,803] {scheduler_job.py:182} INFO - Started process (PID=283) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:32:06,809] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:32:06,816] {logging_mixin.py:104} INFO - [2024-05-28 16:32:06,816] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:32:07,200] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:32:07,220] {logging_mixin.py:104} INFO - [2024-05-28 16:32:07,220] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:32:07,242] {logging_mixin.py:104} INFO - [2024-05-28 16:32:07,242] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:32:07,248] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.464 seconds
+[2024-05-28 16:32:37,632] {scheduler_job.py:182} INFO - Started process (PID=294) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:32:37,634] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:32:37,635] {logging_mixin.py:104} INFO - [2024-05-28 16:32:37,635] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:32:37,936] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:32:37,951] {logging_mixin.py:104} INFO - [2024-05-28 16:32:37,951] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:32:37,964] {logging_mixin.py:104} INFO - [2024-05-28 16:32:37,964] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:32:37,969] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.341 seconds
+[2024-05-28 16:33:08,235] {scheduler_job.py:182} INFO - Started process (PID=303) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:33:08,237] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:33:08,238] {logging_mixin.py:104} INFO - [2024-05-28 16:33:08,238] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:33:08,636] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:33:08,671] {logging_mixin.py:104} INFO - [2024-05-28 16:33:08,671] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:33:08,687] {logging_mixin.py:104} INFO - [2024-05-28 16:33:08,687] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:33:08,693] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.478 seconds
+[2024-05-28 16:33:39,091] {scheduler_job.py:182} INFO - Started process (PID=313) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:33:39,101] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:33:39,103] {logging_mixin.py:104} INFO - [2024-05-28 16:33:39,103] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:33:39,470] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:33:39,491] {logging_mixin.py:104} INFO - [2024-05-28 16:33:39,490] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:33:39,512] {logging_mixin.py:104} INFO - [2024-05-28 16:33:39,511] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:33:39,518] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.433 seconds
+[2024-05-28 16:34:09,956] {scheduler_job.py:182} INFO - Started process (PID=323) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:34:09,960] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:34:09,962] {logging_mixin.py:104} INFO - [2024-05-28 16:34:09,961] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:34:10,337] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:34:10,358] {logging_mixin.py:104} INFO - [2024-05-28 16:34:10,358] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:34:10,376] {logging_mixin.py:104} INFO - [2024-05-28 16:34:10,376] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:34:10,383] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.436 seconds
+[2024-05-28 16:34:40,705] {scheduler_job.py:182} INFO - Started process (PID=333) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:34:40,707] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:34:40,708] {logging_mixin.py:104} INFO - [2024-05-28 16:34:40,708] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:34:41,061] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:34:41,079] {logging_mixin.py:104} INFO - [2024-05-28 16:34:41,079] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:34:41,095] {logging_mixin.py:104} INFO - [2024-05-28 16:34:41,095] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:34:41,101] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.404 seconds
+[2024-05-28 16:35:11,489] {scheduler_job.py:182} INFO - Started process (PID=344) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:35:11,492] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:35:11,493] {logging_mixin.py:104} INFO - [2024-05-28 16:35:11,493] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:35:11,841] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:35:11,860] {logging_mixin.py:104} INFO - [2024-05-28 16:35:11,859] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:35:11,876] {logging_mixin.py:104} INFO - [2024-05-28 16:35:11,876] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:35:11,881] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.399 seconds
+[2024-05-28 16:35:42,260] {scheduler_job.py:182} INFO - Started process (PID=353) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:35:42,262] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:35:42,263] {logging_mixin.py:104} INFO - [2024-05-28 16:35:42,263] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:35:42,646] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:35:42,671] {logging_mixin.py:104} INFO - [2024-05-28 16:35:42,671] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:35:42,688] {logging_mixin.py:104} INFO - [2024-05-28 16:35:42,687] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:35:42,695] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.442 seconds
+[2024-05-28 16:36:13,090] {scheduler_job.py:182} INFO - Started process (PID=363) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:36:13,092] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:36:13,093] {logging_mixin.py:104} INFO - [2024-05-28 16:36:13,093] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:36:13,465] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:36:13,488] {logging_mixin.py:104} INFO - [2024-05-28 16:36:13,487] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:36:13,509] {logging_mixin.py:104} INFO - [2024-05-28 16:36:13,509] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:36:13,519] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.435 seconds
+[2024-05-28 16:36:43,862] {scheduler_job.py:182} INFO - Started process (PID=373) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:36:43,866] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:36:43,868] {logging_mixin.py:104} INFO - [2024-05-28 16:36:43,868] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:36:44,306] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:36:44,357] {logging_mixin.py:104} INFO - [2024-05-28 16:36:44,357] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:36:44,385] {logging_mixin.py:104} INFO - [2024-05-28 16:36:44,384] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:36:44,391] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.541 seconds
+[2024-05-28 16:41:05,795] {scheduler_job.py:182} INFO - Started process (PID=384) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:41:05,799] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:41:05,801] {logging_mixin.py:104} INFO - [2024-05-28 16:41:05,801] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:41:06,220] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:41:06,244] {logging_mixin.py:104} INFO - [2024-05-28 16:41:06,244] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:41:06,261] {logging_mixin.py:104} INFO - [2024-05-28 16:41:06,261] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:41:06,267] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.477 seconds
+[2024-05-28 16:55:23,818] {scheduler_job.py:182} INFO - Started process (PID=394) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:55:23,822] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:55:23,828] {logging_mixin.py:104} INFO - [2024-05-28 16:55:23,828] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:55:24,447] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:55:24,470] {logging_mixin.py:104} INFO - [2024-05-28 16:55:24,470] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:55:24,486] {logging_mixin.py:104} INFO - [2024-05-28 16:55:24,486] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:55:24,492] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.692 seconds
+[2024-05-28 16:55:54,734] {scheduler_job.py:182} INFO - Started process (PID=404) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:55:54,736] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:55:54,737] {logging_mixin.py:104} INFO - [2024-05-28 16:55:54,736] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:55:55,107] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:55:55,126] {logging_mixin.py:104} INFO - [2024-05-28 16:55:55,126] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:55:55,142] {logging_mixin.py:104} INFO - [2024-05-28 16:55:55,142] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:55:55,148] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.418 seconds
+[2024-05-28 16:56:25,481] {scheduler_job.py:182} INFO - Started process (PID=413) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:56:25,483] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:56:25,484] {logging_mixin.py:104} INFO - [2024-05-28 16:56:25,484] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:56:25,789] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:56:25,803] {logging_mixin.py:104} INFO - [2024-05-28 16:56:25,803] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:56:25,817] {logging_mixin.py:104} INFO - [2024-05-28 16:56:25,817] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:56:25,822] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.345 seconds
+[2024-05-28 16:56:56,142] {scheduler_job.py:182} INFO - Started process (PID=423) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:56:56,144] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:56:56,145] {logging_mixin.py:104} INFO - [2024-05-28 16:56:56,145] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:56:56,565] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:56:56,590] {logging_mixin.py:104} INFO - [2024-05-28 16:56:56,590] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:56:56,625] {logging_mixin.py:104} INFO - [2024-05-28 16:56:56,624] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:56:56,632] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.494 seconds
+[2024-05-28 16:57:26,890] {scheduler_job.py:182} INFO - Started process (PID=433) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:57:26,892] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:57:26,894] {logging_mixin.py:104} INFO - [2024-05-28 16:57:26,894] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:57:27,318] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:57:27,353] {logging_mixin.py:104} INFO - [2024-05-28 16:57:27,353] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:57:27,373] {logging_mixin.py:104} INFO - [2024-05-28 16:57:27,373] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:57:27,380] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.494 seconds
+[2024-05-28 16:57:57,657] {scheduler_job.py:182} INFO - Started process (PID=443) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:57:57,658] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:57:57,659] {logging_mixin.py:104} INFO - [2024-05-28 16:57:57,659] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:57:58,011] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:57:58,030] {logging_mixin.py:104} INFO - [2024-05-28 16:57:58,030] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:57:58,047] {logging_mixin.py:104} INFO - [2024-05-28 16:57:58,047] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:57:58,055] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.403 seconds
+[2024-05-28 16:58:28,384] {scheduler_job.py:182} INFO - Started process (PID=454) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:58:28,385] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:58:28,387] {logging_mixin.py:104} INFO - [2024-05-28 16:58:28,386] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:58:28,694] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:58:28,710] {logging_mixin.py:104} INFO - [2024-05-28 16:58:28,710] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:58:28,723] {logging_mixin.py:104} INFO - [2024-05-28 16:58:28,723] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:58:28,728] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.349 seconds
+[2024-05-28 16:58:58,996] {scheduler_job.py:182} INFO - Started process (PID=463) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:58:58,999] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:58:59,000] {logging_mixin.py:104} INFO - [2024-05-28 16:58:59,000] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:58:59,349] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:58:59,372] {logging_mixin.py:104} INFO - [2024-05-28 16:58:59,372] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:58:59,391] {logging_mixin.py:104} INFO - [2024-05-28 16:58:59,391] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:58:59,398] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.409 seconds
+[2024-05-28 16:59:29,753] {scheduler_job.py:182} INFO - Started process (PID=473) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:59:29,755] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 16:59:29,757] {logging_mixin.py:104} INFO - [2024-05-28 16:59:29,757] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:59:30,105] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 16:59:30,127] {logging_mixin.py:104} INFO - [2024-05-28 16:59:30,127] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 16:59:30,146] {logging_mixin.py:104} INFO - [2024-05-28 16:59:30,146] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 16:59:30,151] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.405 seconds
+[2024-05-28 17:00:00,500] {scheduler_job.py:182} INFO - Started process (PID=483) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:00:00,504] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:00:00,506] {logging_mixin.py:104} INFO - [2024-05-28 17:00:00,506] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:00:00,883] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:00:00,905] {logging_mixin.py:104} INFO - [2024-05-28 17:00:00,905] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:00:00,926] {logging_mixin.py:104} INFO - [2024-05-28 17:00:00,926] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:00:00,932] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.438 seconds
+[2024-05-28 17:00:31,385] {scheduler_job.py:182} INFO - Started process (PID=493) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:00:31,388] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:00:31,389] {logging_mixin.py:104} INFO - [2024-05-28 17:00:31,389] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:00:31,758] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:00:31,781] {logging_mixin.py:104} INFO - [2024-05-28 17:00:31,780] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:00:31,797] {logging_mixin.py:104} INFO - [2024-05-28 17:00:31,796] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:00:31,803] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.423 seconds
+[2024-05-28 17:01:02,107] {scheduler_job.py:182} INFO - Started process (PID=503) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:01:02,110] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:01:02,112] {logging_mixin.py:104} INFO - [2024-05-28 17:01:02,112] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:01:02,475] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:01:02,499] {logging_mixin.py:104} INFO - [2024-05-28 17:01:02,498] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:01:02,519] {logging_mixin.py:104} INFO - [2024-05-28 17:01:02,519] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:01:02,525] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.425 seconds
+[2024-05-28 17:01:32,844] {scheduler_job.py:182} INFO - Started process (PID=514) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:01:32,845] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:01:32,847] {logging_mixin.py:104} INFO - [2024-05-28 17:01:32,846] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:01:33,152] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:01:33,168] {logging_mixin.py:104} INFO - [2024-05-28 17:01:33,168] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:01:33,182] {logging_mixin.py:104} INFO - [2024-05-28 17:01:33,182] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:01:33,187] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.348 seconds
+[2024-05-28 17:02:03,489] {scheduler_job.py:182} INFO - Started process (PID=524) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:02:03,491] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:02:03,492] {logging_mixin.py:104} INFO - [2024-05-28 17:02:03,492] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:02:03,845] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:02:03,864] {logging_mixin.py:104} INFO - [2024-05-28 17:02:03,864] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:02:03,881] {logging_mixin.py:104} INFO - [2024-05-28 17:02:03,881] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:02:03,887] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.404 seconds
+[2024-05-28 17:02:34,199] {scheduler_job.py:182} INFO - Started process (PID=534) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:02:34,201] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:02:34,202] {logging_mixin.py:104} INFO - [2024-05-28 17:02:34,202] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:02:34,505] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:02:34,519] {logging_mixin.py:104} INFO - [2024-05-28 17:02:34,519] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:02:34,533] {logging_mixin.py:104} INFO - [2024-05-28 17:02:34,533] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:02:34,543] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.349 seconds
+[2024-05-28 17:03:04,807] {scheduler_job.py:182} INFO - Started process (PID=543) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:03:04,810] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:03:04,811] {logging_mixin.py:104} INFO - [2024-05-28 17:03:04,811] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:03:05,180] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:03:05,200] {logging_mixin.py:104} INFO - [2024-05-28 17:03:05,200] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:03:05,221] {logging_mixin.py:104} INFO - [2024-05-28 17:03:05,220] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:03:05,227] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.428 seconds
+[2024-05-28 17:03:35,583] {scheduler_job.py:182} INFO - Started process (PID=554) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:03:35,585] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:03:35,586] {logging_mixin.py:104} INFO - [2024-05-28 17:03:35,586] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:03:35,899] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:03:35,914] {logging_mixin.py:104} INFO - [2024-05-28 17:03:35,914] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:03:35,929] {logging_mixin.py:104} INFO - [2024-05-28 17:03:35,929] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:03:35,934] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.354 seconds
+[2024-05-28 17:04:06,261] {scheduler_job.py:182} INFO - Started process (PID=563) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:04:06,265] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:04:06,269] {logging_mixin.py:104} INFO - [2024-05-28 17:04:06,269] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:04:06,653] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:04:06,680] {logging_mixin.py:104} INFO - [2024-05-28 17:04:06,679] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:04:06,700] {logging_mixin.py:104} INFO - [2024-05-28 17:04:06,700] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:04:06,706] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.451 seconds
+[2024-05-28 17:04:36,920] {scheduler_job.py:182} INFO - Started process (PID=574) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:04:36,922] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:04:36,923] {logging_mixin.py:104} INFO - [2024-05-28 17:04:36,923] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:04:37,234] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:04:37,249] {logging_mixin.py:104} INFO - [2024-05-28 17:04:37,249] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:04:37,264] {logging_mixin.py:104} INFO - [2024-05-28 17:04:37,264] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:04:37,269] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.353 seconds
+[2024-05-28 17:05:07,536] {scheduler_job.py:182} INFO - Started process (PID=583) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:05:07,539] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:05:07,541] {logging_mixin.py:104} INFO - [2024-05-28 17:05:07,540] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:05:07,905] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:05:07,928] {logging_mixin.py:104} INFO - [2024-05-28 17:05:07,928] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:05:07,948] {logging_mixin.py:104} INFO - [2024-05-28 17:05:07,948] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:05:07,959] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.431 seconds
+[2024-05-28 17:05:38,324] {scheduler_job.py:182} INFO - Started process (PID=594) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:05:38,326] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:05:38,327] {logging_mixin.py:104} INFO - [2024-05-28 17:05:38,327] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:05:38,644] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:05:38,663] {logging_mixin.py:104} INFO - [2024-05-28 17:05:38,662] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:05:38,677] {logging_mixin.py:104} INFO - [2024-05-28 17:05:38,677] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:05:38,682] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.363 seconds
+[2024-05-28 17:06:09,079] {scheduler_job.py:182} INFO - Started process (PID=603) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:06:09,083] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:06:09,084] {logging_mixin.py:104} INFO - [2024-05-28 17:06:09,084] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:06:09,442] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:06:09,464] {logging_mixin.py:104} INFO - [2024-05-28 17:06:09,463] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:06:09,481] {logging_mixin.py:104} INFO - [2024-05-28 17:06:09,481] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:06:09,486] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.414 seconds
+[2024-05-28 17:06:39,798] {scheduler_job.py:182} INFO - Started process (PID=614) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:06:39,800] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:06:39,802] {logging_mixin.py:104} INFO - [2024-05-28 17:06:39,802] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:06:40,115] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:06:40,133] {logging_mixin.py:104} INFO - [2024-05-28 17:06:40,133] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:06:40,149] {logging_mixin.py:104} INFO - [2024-05-28 17:06:40,149] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:06:40,157] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.365 seconds
+[2024-05-28 17:07:10,583] {scheduler_job.py:182} INFO - Started process (PID=623) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:07:10,585] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:07:10,586] {logging_mixin.py:104} INFO - [2024-05-28 17:07:10,586] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:07:10,946] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:07:10,969] {logging_mixin.py:104} INFO - [2024-05-28 17:07:10,969] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:07:10,987] {logging_mixin.py:104} INFO - [2024-05-28 17:07:10,987] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:07:10,992] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.413 seconds
+[2024-05-28 17:07:41,354] {scheduler_job.py:182} INFO - Started process (PID=634) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:07:41,356] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:07:41,358] {logging_mixin.py:104} INFO - [2024-05-28 17:07:41,358] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:07:41,769] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:07:41,805] {logging_mixin.py:104} INFO - [2024-05-28 17:07:41,805] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:07:41,832] {logging_mixin.py:104} INFO - [2024-05-28 17:07:41,831] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:07:41,838] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.492 seconds
+[2024-05-28 17:08:12,039] {scheduler_job.py:182} INFO - Started process (PID=643) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:08:12,041] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:08:12,042] {logging_mixin.py:104} INFO - [2024-05-28 17:08:12,042] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:08:12,439] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:08:12,468] {logging_mixin.py:104} INFO - [2024-05-28 17:08:12,468] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:08:12,486] {logging_mixin.py:104} INFO - [2024-05-28 17:08:12,486] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:08:12,493] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.459 seconds
+[2024-05-28 17:08:42,867] {scheduler_job.py:182} INFO - Started process (PID=654) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:08:42,869] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:08:42,870] {logging_mixin.py:104} INFO - [2024-05-28 17:08:42,870] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:08:43,209] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:08:43,230] {logging_mixin.py:104} INFO - [2024-05-28 17:08:43,230] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:08:43,254] {logging_mixin.py:104} INFO - [2024-05-28 17:08:43,254] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:08:43,260] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.399 seconds
+[2024-05-28 17:09:13,583] {scheduler_job.py:182} INFO - Started process (PID=664) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:09:13,586] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:09:13,587] {logging_mixin.py:104} INFO - [2024-05-28 17:09:13,587] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:09:13,905] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:09:13,924] {logging_mixin.py:104} INFO - [2024-05-28 17:09:13,924] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:09:13,939] {logging_mixin.py:104} INFO - [2024-05-28 17:09:13,939] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:09:13,944] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.365 seconds
+[2024-05-28 17:09:44,298] {scheduler_job.py:182} INFO - Started process (PID=673) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:09:44,300] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:09:44,302] {logging_mixin.py:104} INFO - [2024-05-28 17:09:44,301] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:09:44,665] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:09:44,685] {logging_mixin.py:104} INFO - [2024-05-28 17:09:44,685] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:09:44,701] {logging_mixin.py:104} INFO - [2024-05-28 17:09:44,701] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:09:44,707] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.440 seconds
+[2024-05-28 17:10:15,070] {scheduler_job.py:182} INFO - Started process (PID=684) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:10:15,072] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:10:15,073] {logging_mixin.py:104} INFO - [2024-05-28 17:10:15,073] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:10:15,394] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:10:15,410] {logging_mixin.py:104} INFO - [2024-05-28 17:10:15,410] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:10:15,424] {logging_mixin.py:104} INFO - [2024-05-28 17:10:15,424] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:10:15,429] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.363 seconds
+[2024-05-28 17:10:45,805] {scheduler_job.py:182} INFO - Started process (PID=694) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:10:45,806] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:10:45,807] {logging_mixin.py:104} INFO - [2024-05-28 17:10:45,807] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:10:46,197] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:10:46,216] {logging_mixin.py:104} INFO - [2024-05-28 17:10:46,216] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:10:46,233] {logging_mixin.py:104} INFO - [2024-05-28 17:10:46,233] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:10:46,239] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.438 seconds
+[2024-05-28 17:11:16,552] {scheduler_job.py:182} INFO - Started process (PID=704) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:11:16,555] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:11:16,556] {logging_mixin.py:104} INFO - [2024-05-28 17:11:16,556] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:11:16,922] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:11:16,942] {logging_mixin.py:104} INFO - [2024-05-28 17:11:16,942] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:11:16,962] {logging_mixin.py:104} INFO - [2024-05-28 17:11:16,962] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:11:16,969] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.423 seconds
+[2024-05-28 17:11:47,270] {scheduler_job.py:182} INFO - Started process (PID=713) to work on /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:11:47,273] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/get_new_data.py for tasks to queue
+[2024-05-28 17:11:47,274] {logging_mixin.py:104} INFO - [2024-05-28 17:11:47,274] {dagbag.py:448} INFO - Filling up the DagBag from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:11:47,670] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['get_new_data']) retrieved from /opt/airflow/dags/get_new_data.py
+[2024-05-28 17:11:47,700] {logging_mixin.py:104} INFO - [2024-05-28 17:11:47,700] {dag.py:1818} INFO - Sync 1 DAGs
+[2024-05-28 17:11:47,717] {logging_mixin.py:104} INFO - [2024-05-28 17:11:47,717] {dag.py:2273} INFO - Setting next_dagrun for get_new_data to 2024-05-25 00:00:00+00:00
+[2024-05-28 17:11:47,723] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/get_new_data.py took 0.458 seconds

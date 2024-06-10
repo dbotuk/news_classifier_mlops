@@ -1,0 +1,202 @@
+[2024-05-26 16:06:00,102] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-05T00:00:00+00:00 [queued]>
+[2024-05-26 16:06:00,131] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-05T00:00:00+00:00 [queued]>
+[2024-05-26 16:06:00,135] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:06:00,137] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 16:06:00,137] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:06:00,174] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): scrap_cnn> on 2024-05-05T00:00:00+00:00
+[2024-05-26 16:06:00,180] {standard_task_runner.py:52} INFO - Started process 178 to run task
+[2024-05-26 16:06:00,185] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'scrap_cnn', '2024-05-05T00:00:00+00:00', '--job-id', '15', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmp5n7hrl4a', '--error-file', '/tmp/tmp4hkh9459']
+[2024-05-26 16:06:00,194] {standard_task_runner.py:77} INFO - Job 15: Subtask scrap_cnn
+[2024-05-26 16:06:00,297] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.scrap_cnn 2024-05-05T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 16:06:00,432] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=scrap_cnn
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-05T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-05T00:00:00+00:00
+[2024-05-26 16:06:00,469] {taskinstance.py:1455} ERROR - HTTPConnectionPool(host='localhost', port=7010): Max retries exceeded with url: /extract_news (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fffafddf828>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.6/http/client.py", line 1291, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1337, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1286, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1046, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.6/http/client.py", line 984, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fffafddf828>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=7010): Max retries exceeded with url: /extract_news (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fffafddf828>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_new_data.py", line 17, in scrap_cnn
+    response = requests.get('http://localhost:7010/extract_news')
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=7010): Max retries exceeded with url: /extract_news (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fffafddf828>: Failed to establish a new connection: [Errno 111] Connection refused',))
+[2024-05-26 16:06:00,490] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=get_new_data, task_id=scrap_cnn, execution_date=20240505T000000, start_date=20240526T160600, end_date=20240526T160600
+[2024-05-26 16:06:00,539] {local_task_job.py:146} INFO - Task exited with return code 1
+[2024-05-26 16:21:00,554] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-05T00:00:00+00:00 [queued]>
+[2024-05-26 16:21:00,591] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-05T00:00:00+00:00 [queued]>
+[2024-05-26 16:21:00,597] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:21:00,603] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 16:21:00,606] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:21:00,651] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): scrap_cnn> on 2024-05-05T00:00:00+00:00
+[2024-05-26 16:21:00,655] {standard_task_runner.py:52} INFO - Started process 185 to run task
+[2024-05-26 16:21:00,671] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'scrap_cnn', '2024-05-05T00:00:00+00:00', '--job-id', '101', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmpy8uk46om', '--error-file', '/tmp/tmp1juca4az']
+[2024-05-26 16:21:00,709] {standard_task_runner.py:77} INFO - Job 101: Subtask scrap_cnn
+[2024-05-26 16:21:00,788] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.scrap_cnn 2024-05-05T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 16:21:00,886] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=scrap_cnn
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-05T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-05T00:00:00+00:00
+[2024-05-26 16:21:00,905] {taskinstance.py:1455} ERROR - HTTPConnectionPool(host='localhost', port=7010): Max retries exceeded with url: /extract_news (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fffafddf7b8>: Failed to establish a new connection: [Errno 111] Connection refused',))
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 160, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 84, in create_connection
+    raise err
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 392, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "/usr/local/lib/python3.6/http/client.py", line 1291, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1337, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1286, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.6/http/client.py", line 1046, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.6/http/client.py", line 984, in send
+    self.connect()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 187, in connect
+    conn = self._new_conn()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connection.py", line 172, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x7fffafddf7b8>: Failed to establish a new connection: [Errno 111] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=7010): Max retries exceeded with url: /extract_news (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fffafddf7b8>: Failed to establish a new connection: [Errno 111] Connection refused',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_new_data.py", line 17, in scrap_cnn
+    response = requests.get('http://localhost:7010/extract_news')
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='localhost', port=7010): Max retries exceeded with url: /extract_news (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7fffafddf7b8>: Failed to establish a new connection: [Errno 111] Connection refused',))
+[2024-05-26 16:21:00,919] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=get_new_data, task_id=scrap_cnn, execution_date=20240505T000000, start_date=20240526T162100, end_date=20240526T162100
+[2024-05-26 16:21:00,940] {local_task_job.py:146} INFO - Task exited with return code 1
+[2024-05-26 16:38:00,738] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-05T00:00:00+00:00 [queued]>
+[2024-05-26 16:38:00,753] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-05T00:00:00+00:00 [queued]>
+[2024-05-26 16:38:00,756] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:38:00,759] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 16:38:00,762] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:38:00,787] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): scrap_cnn> on 2024-05-05T00:00:00+00:00
+[2024-05-26 16:38:00,791] {standard_task_runner.py:52} INFO - Started process 177 to run task
+[2024-05-26 16:38:00,797] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'scrap_cnn', '2024-05-05T00:00:00+00:00', '--job-id', '201', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmprq5nzcbv', '--error-file', '/tmp/tmpe3wrswjh']
+[2024-05-26 16:38:00,802] {standard_task_runner.py:77} INFO - Job 201: Subtask scrap_cnn
+[2024-05-26 16:38:00,853] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.scrap_cnn 2024-05-05T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 16:38:00,908] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=scrap_cnn
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-05T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-05T00:00:00+00:00
+[2024-05-26 16:53:11,121] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 16:53:11,132] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=get_new_data, task_id=scrap_cnn, execution_date=20240505T000000, start_date=20240526T163800, end_date=20240526T165311
+[2024-05-26 16:53:11,161] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 16:53:11,187] {local_task_job.py:146} INFO - Task exited with return code 0

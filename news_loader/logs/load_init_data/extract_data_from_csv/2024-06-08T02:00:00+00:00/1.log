@@ -1,0 +1,88 @@
+[2024-06-09 14:01:27,106] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [queued]>
+[2024-06-09 14:01:27,134] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [queued]>
+[2024-06-09 14:01:27,140] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 14:01:27,150] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-06-09 14:01:27,154] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 14:01:27,204] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-06-08T02:00:00+00:00
+[2024-06-09 14:01:27,234] {standard_task_runner.py:52} INFO - Started process 214 to run task
+[2024-06-09 14:01:27,245] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-06-08T02:00:00+00:00', '--job-id', '24', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpz8rjx34x', '--error-file', '/tmp/tmpeakfucw7']
+[2024-06-09 14:01:27,269] {standard_task_runner.py:77} INFO - Job 24: Subtask extract_data_from_csv
+[2024-06-09 14:01:27,550] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [running]> on host 97b873bf6d4d
+[2024-06-09 14:01:27,738] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-08T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-06-08T02:00:00+00:00
+[2024-06-09 14:01:28,861] {python.py:118} INFO - Done. Returned value was: None
+[2024-06-09 14:01:28,971] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240608T020000, start_date=20240609T140127, end_date=20240609T140128
+[2024-06-09 14:01:29,081] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-09 14:01:29,110] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-06-09 14:21:25,173] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [queued]>
+[2024-06-09 14:21:25,184] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [queued]>
+[2024-06-09 14:21:25,184] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 14:21:25,185] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-06-09 14:21:25,185] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 14:21:25,197] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-06-08T02:00:00+00:00
+[2024-06-09 14:21:25,201] {standard_task_runner.py:52} INFO - Started process 173 to run task
+[2024-06-09 14:21:25,206] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-06-08T02:00:00+00:00', '--job-id', '64', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpdaumgbl2', '--error-file', '/tmp/tmpmnqxo82a']
+[2024-06-09 14:21:25,209] {standard_task_runner.py:77} INFO - Job 64: Subtask extract_data_from_csv
+[2024-06-09 14:21:25,245] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [running]> on host 05b5c9495664
+[2024-06-09 14:21:25,285] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-08T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-06-08T02:00:00+00:00
+[2024-06-09 14:21:25,687] {python.py:118} INFO - Done. Returned value was: None
+[2024-06-09 14:21:25,694] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240608T020000, start_date=20240609T142125, end_date=20240609T142125
+[2024-06-09 14:21:25,720] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-09 14:21:25,764] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-06-09 17:49:05,889] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [queued]>
+[2024-06-09 17:49:05,904] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [queued]>
+[2024-06-09 17:49:05,906] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 17:49:05,907] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-06-09 17:49:05,907] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 17:49:05,915] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-06-08T02:00:00+00:00
+[2024-06-09 17:49:05,919] {standard_task_runner.py:52} INFO - Started process 402 to run task
+[2024-06-09 17:49:05,922] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-06-08T02:00:00+00:00', '--job-id', '97', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpm9e1csfy', '--error-file', '/tmp/tmppxg8slqj']
+[2024-06-09 17:49:05,924] {standard_task_runner.py:77} INFO - Job 97: Subtask extract_data_from_csv
+[2024-06-09 17:49:05,954] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [running]> on host 44b09f4be14e
+[2024-06-09 17:49:05,998] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-08T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-06-08T02:00:00+00:00
+[2024-06-09 17:49:06,382] {python.py:118} INFO - Done. Returned value was: None
+[2024-06-09 17:49:06,391] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240608T020000, start_date=20240609T174905, end_date=20240609T174906
+[2024-06-09 17:49:06,412] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-09 17:49:06,441] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-06-09 22:39:40,275] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [queued]>
+[2024-06-09 22:39:40,282] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [queued]>
+[2024-06-09 22:39:40,283] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 22:39:40,283] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-06-09 22:39:40,283] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-06-09 22:39:40,291] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): extract_data_from_csv> on 2024-06-08T02:00:00+00:00
+[2024-06-09 22:39:40,295] {standard_task_runner.py:52} INFO - Started process 173 to run task
+[2024-06-09 22:39:40,299] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'load_init_data', 'extract_data_from_csv', '2024-06-08T02:00:00+00:00', '--job-id', '131', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/load_init_data.py', '--cfg-path', '/tmp/tmpdyky3fkr', '--error-file', '/tmp/tmpwqdinm_m']
+[2024-06-09 22:39:40,302] {standard_task_runner.py:77} INFO - Job 131: Subtask extract_data_from_csv
+[2024-06-09 22:39:40,334] {logging_mixin.py:104} INFO - Running <TaskInstance: load_init_data.extract_data_from_csv 2024-06-08T02:00:00+00:00 [running]> on host 73d5d49b0128
+[2024-06-09 22:39:40,365] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=load_init_data
+AIRFLOW_CTX_TASK_ID=extract_data_from_csv
+AIRFLOW_CTX_EXECUTION_DATE=2024-06-08T02:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-06-08T02:00:00+00:00
+[2024-06-09 22:39:40,741] {python.py:118} INFO - Done. Returned value was: None
+[2024-06-09 22:39:40,749] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=load_init_data, task_id=extract_data_from_csv, execution_date=20240608T020000, start_date=20240609T223940, end_date=20240609T223940
+[2024-06-09 22:39:40,779] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-06-09 22:39:40,784] {local_task_job.py:146} INFO - Task exited with return code 0

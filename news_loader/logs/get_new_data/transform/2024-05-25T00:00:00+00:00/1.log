@@ -1,0 +1,176 @@
+[2024-05-26 17:17:40,424] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 17:17:40,431] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 17:17:40,431] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:17:40,431] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 17:17:40,432] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:17:40,440] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): transform> on 2024-05-25T00:00:00+00:00
+[2024-05-26 17:17:40,442] {standard_task_runner.py:52} INFO - Started process 215 to run task
+[2024-05-26 17:17:40,446] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'transform', '2024-05-25T00:00:00+00:00', '--job-id', '325', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmp046bpd7n', '--error-file', '/tmp/tmpol1b02hn']
+[2024-05-26 17:17:40,449] {standard_task_runner.py:77} INFO - Job 325: Subtask transform
+[2024-05-26 17:17:40,476] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 17:17:40,503] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-25T00:00:00+00:00
+[2024-05-26 17:17:41,480] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 17:17:41,487] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=get_new_data, task_id=transform, execution_date=20240525T000000, start_date=20240526T171740, end_date=20240526T171741
+[2024-05-26 17:17:41,505] {taskinstance.py:1220} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 17:17:41,539] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-05-26 17:40:40,103] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 17:40:40,113] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 17:40:40,113] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:40:40,113] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 17:40:40,114] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:40:40,119] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): transform> on 2024-05-25T00:00:00+00:00
+[2024-05-26 17:40:40,123] {standard_task_runner.py:52} INFO - Started process 235 to run task
+[2024-05-26 17:40:40,126] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'transform', '2024-05-25T00:00:00+00:00', '--job-id', '328', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmp6yc8o3gy', '--error-file', '/tmp/tmpqkzw6kvv']
+[2024-05-26 17:40:40,129] {standard_task_runner.py:77} INFO - Job 328: Subtask transform
+[2024-05-26 17:40:40,160] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 17:40:40,188] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-25T00:00:00+00:00
+[2024-05-26 17:40:41,053] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 17:40:41,059] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=get_new_data, task_id=transform, execution_date=20240525T000000, start_date=20240526T174040, end_date=20240526T174041
+[2024-05-26 17:40:41,079] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 17:40:41,104] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-05-26 17:50:47,262] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 17:50:47,272] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 17:50:47,273] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:50:47,273] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 17:50:47,277] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:50:47,286] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): transform> on 2024-05-25T00:00:00+00:00
+[2024-05-26 17:50:47,290] {standard_task_runner.py:52} INFO - Started process 225 to run task
+[2024-05-26 17:50:47,293] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'transform', '2024-05-25T00:00:00+00:00', '--job-id', '335', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmpzwpqfq33', '--error-file', '/tmp/tmpxy___3l7']
+[2024-05-26 17:50:47,295] {standard_task_runner.py:77} INFO - Job 335: Subtask transform
+[2024-05-26 17:50:47,327] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 17:50:47,355] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-25T00:00:00+00:00
+[2024-05-26 17:50:48,220] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 17:50:48,228] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=get_new_data, task_id=transform, execution_date=20240525T000000, start_date=20240526T175047, end_date=20240526T175048
+[2024-05-26 17:50:48,245] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 17:50:48,249] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-05-26 18:36:22,438] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 18:36:22,452] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 18:36:22,452] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 18:36:22,453] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 18:36:22,453] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 18:36:22,461] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): transform> on 2024-05-25T00:00:00+00:00
+[2024-05-26 18:36:22,464] {standard_task_runner.py:52} INFO - Started process 200 to run task
+[2024-05-26 18:36:22,469] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'transform', '2024-05-25T00:00:00+00:00', '--job-id', '351', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmp4k5_zkrh', '--error-file', '/tmp/tmpw5ghoap6']
+[2024-05-26 18:36:22,471] {standard_task_runner.py:77} INFO - Job 351: Subtask transform
+[2024-05-26 18:36:22,508] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 18:36:22,543] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-25T00:00:00+00:00
+[2024-05-26 18:36:23,484] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 18:36:23,492] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=get_new_data, task_id=transform, execution_date=20240525T000000, start_date=20240526T183622, end_date=20240526T183623
+[2024-05-26 18:36:23,519] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 18:36:23,544] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-05-26 18:53:25,524] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 18:53:25,531] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 18:53:25,531] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 18:53:25,531] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 18:53:25,531] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 18:53:25,539] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): transform> on 2024-05-25T00:00:00+00:00
+[2024-05-26 18:53:25,542] {standard_task_runner.py:52} INFO - Started process 194 to run task
+[2024-05-26 18:53:25,546] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'transform', '2024-05-25T00:00:00+00:00', '--job-id', '356', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmp9_2wqkhg', '--error-file', '/tmp/tmp6erbes3w']
+[2024-05-26 18:53:25,549] {standard_task_runner.py:77} INFO - Job 356: Subtask transform
+[2024-05-26 18:53:25,579] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 18:53:25,607] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-25T00:00:00+00:00
+[2024-05-26 18:53:26,509] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 18:53:26,518] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=get_new_data, task_id=transform, execution_date=20240525T000000, start_date=20240526T185325, end_date=20240526T185326
+[2024-05-26 18:53:26,544] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 18:53:26,573] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-05-26 19:01:58,230] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 19:01:58,237] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 19:01:58,237] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 19:01:58,238] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 19:01:58,238] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 19:01:58,246] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): transform> on 2024-05-25T00:00:00+00:00
+[2024-05-26 19:01:58,249] {standard_task_runner.py:52} INFO - Started process 210 to run task
+[2024-05-26 19:01:58,252] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'transform', '2024-05-25T00:00:00+00:00', '--job-id', '361', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmpqgotm47u', '--error-file', '/tmp/tmpxc9_16ot']
+[2024-05-26 19:01:58,254] {standard_task_runner.py:77} INFO - Job 361: Subtask transform
+[2024-05-26 19:01:58,283] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 19:01:58,309] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-25T00:00:00+00:00
+[2024-05-26 19:01:59,168] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 19:01:59,174] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=get_new_data, task_id=transform, execution_date=20240525T000000, start_date=20240526T190158, end_date=20240526T190159
+[2024-05-26 19:01:59,192] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 19:01:59,218] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-05-26 21:01:09,769] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 21:01:09,782] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 21:01:09,783] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:01:09,783] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 21:01:09,783] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:01:09,792] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): transform> on 2024-05-25T00:00:00+00:00
+[2024-05-26 21:01:09,806] {standard_task_runner.py:52} INFO - Started process 199 to run task
+[2024-05-26 21:01:09,810] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'transform', '2024-05-25T00:00:00+00:00', '--job-id', '381', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmpz9lyho3g', '--error-file', '/tmp/tmpahb7mh0r']
+[2024-05-26 21:01:09,813] {standard_task_runner.py:77} INFO - Job 381: Subtask transform
+[2024-05-26 21:01:09,851] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [running]> on host ff5273ee61d8
+[2024-05-26 21:01:09,892] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-25T00:00:00+00:00
+[2024-05-26 21:01:10,871] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 21:01:10,878] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=get_new_data, task_id=transform, execution_date=20240525T000000, start_date=20240526T210109, end_date=20240526T210110
+[2024-05-26 21:01:10,925] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 21:01:10,961] {local_task_job.py:146} INFO - Task exited with return code 0
+[2024-05-26 21:06:31,749] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 21:06:31,759] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [queued]>
+[2024-05-26 21:06:31,759] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:06:31,759] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 21:06:31,759] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 21:06:31,765] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): transform> on 2024-05-25T00:00:00+00:00
+[2024-05-26 21:06:31,768] {standard_task_runner.py:52} INFO - Started process 195 to run task
+[2024-05-26 21:06:31,771] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'transform', '2024-05-25T00:00:00+00:00', '--job-id', '386', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmpka7y4t_a', '--error-file', '/tmp/tmp4fgtt_e8']
+[2024-05-26 21:06:31,774] {standard_task_runner.py:77} INFO - Job 386: Subtask transform
+[2024-05-26 21:06:31,813] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.transform 2024-05-25T00:00:00+00:00 [running]> on host ff5273ee61d8
+[2024-05-26 21:06:31,850] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-25T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-25T00:00:00+00:00
+[2024-05-26 21:06:32,774] {python.py:118} INFO - Done. Returned value was: None
+[2024-05-26 21:06:32,785] {taskinstance.py:1166} INFO - Marking task as SUCCESS. dag_id=get_new_data, task_id=transform, execution_date=20240525T000000, start_date=20240526T210631, end_date=20240526T210632
+[2024-05-26 21:06:32,803] {taskinstance.py:1220} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-05-26 21:06:32,822] {local_task_job.py:146} INFO - Task exited with return code 0

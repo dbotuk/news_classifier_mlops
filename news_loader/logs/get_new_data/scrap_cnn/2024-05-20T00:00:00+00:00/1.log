@@ -1,0 +1,264 @@
+[2024-05-26 16:32:53,953] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-26 16:32:53,979] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-26 16:32:53,981] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:32:53,983] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 16:32:53,985] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:32:54,018] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): scrap_cnn> on 2024-05-20T00:00:00+00:00
+[2024-05-26 16:32:54,027] {standard_task_runner.py:52} INFO - Started process 182 to run task
+[2024-05-26 16:32:54,038] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'scrap_cnn', '2024-05-20T00:00:00+00:00', '--job-id', '182', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmpm7tisr9c', '--error-file', '/tmp/tmp6hrvsheb']
+[2024-05-26 16:32:54,051] {standard_task_runner.py:77} INFO - Job 182: Subtask scrap_cnn
+[2024-05-26 16:32:54,145] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.scrap_cnn 2024-05-20T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 16:32:54,199] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=scrap_cnn
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-20T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-20T00:00:00+00:00
+[2024-05-26 16:35:08,703] {local_task_job.py:77} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-05-26 16:35:09,079] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 182
+[2024-05-26 16:35:09,158] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-05-26 16:35:09,194] {logging_mixin.py:104} WARNING - --- Logging error ---
+[2024-05-26 16:35:09,213] {logging_mixin.py:104} WARNING - Traceback (most recent call last):
+[2024-05-26 16:35:09,220] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+[2024-05-26 16:35:09,240] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+[2024-05-26 16:35:09,245] {logging_mixin.py:104} WARNING -   File "<string>", line 3, in raise_from
+[2024-05-26 16:35:09,251] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+[2024-05-26 16:35:09,254] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/http/client.py", line 1383, in getresponse
+    response.begin()
+[2024-05-26 16:35:09,256] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+[2024-05-26 16:35:09,260] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+[2024-05-26 16:35:09,262] {logging_mixin.py:104} WARNING - http.client.RemoteDisconnected: Remote end closed connection without response
+[2024-05-26 16:35:09,264] {logging_mixin.py:104} WARNING - 
+During handling of the above exception, another exception occurred:
+[2024-05-26 16:35:09,269] {logging_mixin.py:104} WARNING - Traceback (most recent call last):
+[2024-05-26 16:35:09,271] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+[2024-05-26 16:35:09,275] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+[2024-05-26 16:35:09,284] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 410, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+[2024-05-26 16:35:09,288] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+[2024-05-26 16:35:09,304] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+[2024-05-26 16:35:09,311] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+[2024-05-26 16:35:09,319] {logging_mixin.py:104} WARNING -   File "<string>", line 3, in raise_from
+[2024-05-26 16:35:09,321] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+[2024-05-26 16:35:09,326] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/http/client.py", line 1383, in getresponse
+    response.begin()
+[2024-05-26 16:35:09,327] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+[2024-05-26 16:35:09,329] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+[2024-05-26 16:35:09,332] {logging_mixin.py:104} WARNING - urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+[2024-05-26 16:35:09,334] {logging_mixin.py:104} WARNING - 
+During handling of the above exception, another exception occurred:
+[2024-05-26 16:35:09,335] {logging_mixin.py:104} WARNING - Traceback (most recent call last):
+[2024-05-26 16:35:09,340] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+[2024-05-26 16:35:09,346] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+[2024-05-26 16:35:09,351] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+[2024-05-26 16:35:09,351] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+[2024-05-26 16:35:09,352] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+[2024-05-26 16:35:09,356] {logging_mixin.py:104} WARNING -   File "/opt/airflow/dags/get_new_data.py", line 17, in scrap_cnn
+    response = requests.get('http://cnn_scrapper:7010/extract_news')
+[2024-05-26 16:35:09,359] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+[2024-05-26 16:35:09,363] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+[2024-05-26 16:35:09,363] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+[2024-05-26 16:35:09,364] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+[2024-05-26 16:35:09,364] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+[2024-05-26 16:35:09,372] {logging_mixin.py:104} WARNING - requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+[2024-05-26 16:35:09,377] {logging_mixin.py:104} WARNING - 
+During handling of the above exception, another exception occurred:
+[2024-05-26 16:35:09,385] {logging_mixin.py:104} WARNING - Traceback (most recent call last):
+[2024-05-26 16:35:09,391] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+[2024-05-26 16:35:09,395] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+[2024-05-26 16:35:09,397] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 585, in format
+    record.exc_text = self.formatException(record.exc_info)
+[2024-05-26 16:35:09,398] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 535, in formatException
+    traceback.print_exception(ei[0], ei[1], tb, None, sio)
+[2024-05-26 16:35:09,398] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/traceback.py", line 105, in print_exception
+    print(line, file=file, end="")
+[2024-05-26 16:35:09,399] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1241, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+[2024-05-26 16:35:09,404] {logging_mixin.py:104} WARNING - airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-05-26 16:35:09,412] {logging_mixin.py:104} WARNING - Call stack:
+[2024-05-26 16:35:09,459] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/bin/airflow", line 8, in <module>
+    sys.exit(main())
+[2024-05-26 16:35:09,466] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/__main__.py", line 40, in main
+    args.func(args)
+[2024-05-26 16:35:09,468] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+[2024-05-26 16:35:09,471] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/cli.py", line 89, in wrapper
+    return f(*args, **kwargs)
+[2024-05-26 16:35:09,473] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/scheduler_command.py", line 63, in scheduler
+    job.run()
+[2024-05-26 16:35:09,474] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/jobs/base_job.py", line 237, in run
+    self._execute()
+[2024-05-26 16:35:09,474] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/jobs/scheduler_job.py", line 1272, in _execute
+    self.executor.start()
+[2024-05-26 16:35:09,478] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/executors/local_executor.py", line 346, in start
+    self.impl.start()
+[2024-05-26 16:35:09,480] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/executors/local_executor.py", line 291, in start
+    worker.start()
+[2024-05-26 16:35:09,482] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/multiprocessing/process.py", line 105, in start
+    self._popen = self._Popen(self)
+[2024-05-26 16:35:09,483] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/multiprocessing/context.py", line 223, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+[2024-05-26 16:35:09,488] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/multiprocessing/context.py", line 277, in _Popen
+    return Popen(process_obj)
+[2024-05-26 16:35:09,490] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+[2024-05-26 16:35:09,491] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/multiprocessing/popen_fork.py", line 73, in _launch
+    code = process_obj._bootstrap()
+[2024-05-26 16:35:09,493] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+[2024-05-26 16:35:09,496] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/executors/local_executor.py", line 69, in run
+    return super().run()
+[2024-05-26 16:35:09,501] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/multiprocessing/process.py", line 93, in run
+    self._target(*self._args, **self._kwargs)
+[2024-05-26 16:35:09,504] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/executors/local_executor.py", line 181, in do_work
+    self.execute_work(key=key, command=command)
+[2024-05-26 16:35:09,506] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/executors/local_executor.py", line 85, in execute_work
+    state = self._execute_work_in_fork(command)
+[2024-05-26 16:35:09,508] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/executors/local_executor.py", line 123, in _execute_work_in_fork
+    args.func(args)
+[2024-05-26 16:35:09,510] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+[2024-05-26 16:35:09,512] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/cli.py", line 89, in wrapper
+    return f(*args, **kwargs)
+[2024-05-26 16:35:09,514] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 235, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+[2024-05-26 16:35:09,515] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 64, in _run_task_by_selected_method
+    _run_task_by_local_task_job(args, ti)
+[2024-05-26 16:35:09,516] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 120, in _run_task_by_local_task_job
+    run_job.run()
+[2024-05-26 16:35:09,519] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/jobs/base_job.py", line 237, in run
+    self._execute()
+[2024-05-26 16:35:09,520] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/jobs/local_task_job.py", line 97, in _execute
+    self.task_runner.start()
+[2024-05-26 16:35:09,522] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/task/task_runner/standard_task_runner.py", line 41, in start
+    self.process = self._start_by_fork()
+[2024-05-26 16:35:09,524] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+[2024-05-26 16:35:09,525] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+[2024-05-26 16:35:09,527] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/cli.py", line 89, in wrapper
+    return f(*args, **kwargs)
+[2024-05-26 16:35:09,530] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 235, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+[2024-05-26 16:35:09,532] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 66, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+[2024-05-26 16:35:09,535] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/cli/commands/task_command.py", line 152, in _run_raw_task
+    error_file=args.error_file,
+[2024-05-26 16:35:09,536] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+[2024-05-26 16:35:09,537] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1152, in _run_raw_task
+    self.handle_failure(e, test_mode, error_file=error_file)
+[2024-05-26 16:35:09,539] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/session.py", line 65, in wrapper
+    return func(*args, session=session, **kwargs)
+[2024-05-26 16:35:09,541] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1455, in handle_failure
+    self.log.exception(error)
+[2024-05-26 16:35:09,543] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 1343, in exception
+    self.error(msg, *args, exc_info=exc_info, **kwargs)
+[2024-05-26 16:35:09,543] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 1337, in error
+    self._log(ERROR, msg, args, **kwargs)
+[2024-05-26 16:35:09,544] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 1444, in _log
+    self.handle(record)
+[2024-05-26 16:35:09,545] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 1454, in handle
+    self.callHandlers(record)
+[2024-05-26 16:35:09,545] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 1516, in callHandlers
+    hdlr.handle(record)
+[2024-05-26 16:35:09,546] {logging_mixin.py:104} WARNING -   File "/usr/local/lib/python3.6/logging/__init__.py", line 865, in handle
+    self.emit(record)
+[2024-05-26 16:35:09,547] {logging_mixin.py:104} WARNING -   File "/home/airflow/.local/lib/python3.6/site-packages/airflow/utils/log/file_task_handler.py", line 64, in emit
+    self.handler.emit(record)
+[2024-05-26 16:35:09,548] {logging_mixin.py:104} WARNING - Message: ConnectionError(ProtocolError('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',)),)
+Arguments: ()
+[2024-05-26 16:35:09,559] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=get_new_data, task_id=scrap_cnn, execution_date=20240520T000000, start_date=20240526T163253, end_date=20240526T163509
+[2024-05-26 16:35:09,688] {process_utils.py:66} INFO - Process psutil.Process(pid=182, status='terminated', exitcode=1, started='16:32:53') (182) terminated with exit code 1
+[2024-05-26 17:11:09,883] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-26 17:11:09,914] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-20T00:00:00+00:00 [queued]>
+[2024-05-26 17:11:09,918] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:11:09,923] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 17:11:09,925] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:11:09,989] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): scrap_cnn> on 2024-05-20T00:00:00+00:00
+[2024-05-26 17:11:09,997] {standard_task_runner.py:52} INFO - Started process 179 to run task
+[2024-05-26 17:11:10,010] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'scrap_cnn', '2024-05-20T00:00:00+00:00', '--job-id', '317', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmp9lhsmpdz', '--error-file', '/tmp/tmp29q7oinv']
+[2024-05-26 17:11:10,023] {standard_task_runner.py:77} INFO - Job 317: Subtask scrap_cnn
+[2024-05-26 17:11:10,114] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.scrap_cnn 2024-05-20T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 17:11:10,210] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=scrap_cnn
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-20T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-20T00:00:00+00:00
+[2024-05-26 17:12:34,437] {local_task_job.py:77} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-05-26 17:12:34,456] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 179
+[2024-05-26 17:12:34,518] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-05-26 17:12:34,669] {taskinstance.py:1455} ERROR - Task received SIGTERM signal
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_new_data.py", line 17, in scrap_cnn
+    response = requests.get('http://cnn_scrapper:7010/extract_news')
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1383, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 281, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "/usr/local/lib/python3.6/socket.py", line 586, in readinto
+    return self._sock.recv_into(b)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1241, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-05-26 17:12:34,730] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=get_new_data, task_id=scrap_cnn, execution_date=20240520T000000, start_date=20240526T171109, end_date=20240526T171234
+[2024-05-26 17:12:35,046] {process_utils.py:66} INFO - Process psutil.Process(pid=179, status='terminated', exitcode=1, started='17:11:09') (179) terminated with exit code 1

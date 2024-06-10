@@ -1,0 +1,210 @@
+[2024-05-26 16:32:53,895] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-18T00:00:00+00:00 [queued]>
+[2024-05-26 16:32:53,934] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-18T00:00:00+00:00 [queued]>
+[2024-05-26 16:32:53,937] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:32:53,938] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 16:32:53,939] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 16:32:53,963] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): scrap_cnn> on 2024-05-18T00:00:00+00:00
+[2024-05-26 16:32:53,976] {standard_task_runner.py:52} INFO - Started process 181 to run task
+[2024-05-26 16:32:53,984] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'scrap_cnn', '2024-05-18T00:00:00+00:00', '--job-id', '181', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmp2ghqob33', '--error-file', '/tmp/tmp1dz_kp_p']
+[2024-05-26 16:32:54,008] {standard_task_runner.py:77} INFO - Job 181: Subtask scrap_cnn
+[2024-05-26 16:32:54,081] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.scrap_cnn 2024-05-18T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 16:32:54,146] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=scrap_cnn
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-18T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-18T00:00:00+00:00
+[2024-05-26 16:35:08,807] {local_task_job.py:77} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-05-26 16:35:08,989] {taskinstance.py:1455} ERROR - ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1383, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 410, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1383, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_new_data.py", line 17, in scrap_cnn
+    response = requests.get('http://cnn_scrapper:7010/extract_news')
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+[2024-05-26 16:35:09,081] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 181
+[2024-05-26 16:35:09,135] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-05-26 16:35:09,266] {process_utils.py:66} INFO - Process psutil.Process(pid=181, status='terminated', exitcode=1, started='16:32:53') (181) terminated with exit code 1
+[2024-05-26 17:11:09,757] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-18T00:00:00+00:00 [queued]>
+[2024-05-26 17:11:09,777] {taskinstance.py:851} INFO - Dependencies all met for <TaskInstance: get_new_data.scrap_cnn 2024-05-18T00:00:00+00:00 [queued]>
+[2024-05-26 17:11:09,785] {taskinstance.py:1042} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:11:09,785] {taskinstance.py:1043} INFO - Starting attempt 1 of 6
+[2024-05-26 17:11:09,786] {taskinstance.py:1044} INFO - 
+--------------------------------------------------------------------------------
+[2024-05-26 17:11:09,836] {taskinstance.py:1063} INFO - Executing <Task(PythonOperator): scrap_cnn> on 2024-05-18T00:00:00+00:00
+[2024-05-26 17:11:09,858] {standard_task_runner.py:52} INFO - Started process 177 to run task
+[2024-05-26 17:11:09,875] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'get_new_data', 'scrap_cnn', '2024-05-18T00:00:00+00:00', '--job-id', '315', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/get_new_data.py', '--cfg-path', '/tmp/tmp2w6j60li', '--error-file', '/tmp/tmps0issneh']
+[2024-05-26 17:11:09,896] {standard_task_runner.py:77} INFO - Job 315: Subtask scrap_cnn
+[2024-05-26 17:11:10,038] {logging_mixin.py:104} INFO - Running <TaskInstance: get_new_data.scrap_cnn 2024-05-18T00:00:00+00:00 [running]> on host 6a7718113559
+[2024-05-26 17:11:10,110] {taskinstance.py:1257} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=get_new_data
+AIRFLOW_CTX_TASK_ID=scrap_cnn
+AIRFLOW_CTX_EXECUTION_DATE=2024-05-18T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-05-18T00:00:00+00:00
+[2024-05-26 17:12:34,435] {local_task_job.py:77} ERROR - Received SIGTERM. Terminating subprocesses
+[2024-05-26 17:12:34,553] {process_utils.py:100} INFO - Sending Signals.SIGTERM to GPID 177
+[2024-05-26 17:12:34,599] {taskinstance.py:1239} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-05-26 17:12:34,722] {taskinstance.py:1455} ERROR - Task received SIGTERM signal
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1383, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/util/retry.py", line 410, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/packages/six.py", line 734, in reraise
+    raise value.with_traceback(tb)
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 677, in urlopen
+    chunked=chunked,
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 426, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 421, in _make_request
+    httplib_response = conn.getresponse()
+  File "/usr/local/lib/python3.6/http/client.py", line 1383, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.6/http/client.py", line 320, in begin
+    version, status, reason = self._read_status()
+  File "/usr/local/lib/python3.6/http/client.py", line 289, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1112, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1285, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1315, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 117, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/python.py", line 128, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_new_data.py", line 17, in scrap_cnn
+    response = requests.get('http://cnn_scrapper:7010/extract_news')
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 76, in get
+    return request('get', url, params=params, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 428, in __exit__
+    self.close()
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/sessions.py", line 747, in close
+    v.close()
+  File "/home/airflow/.local/lib/python3.6/site-packages/requests/adapters.py", line 325, in close
+    self.poolmanager.clear()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/poolmanager.py", line 217, in clear
+    self.pools.clear()
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/_collections.py", line 99, in clear
+    self.dispose_func(value)
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/poolmanager.py", line 168, in <lambda>
+    self.pools = RecentlyUsedContainer(num_pools, dispose_func=lambda p: p.close())
+  File "/home/airflow/.local/lib/python3.6/site-packages/urllib3/connectionpool.py", line 471, in close
+    conn = old_pool.get(block=False)
+  File "/usr/local/lib/python3.6/queue.py", line 176, in get
+    return item
+  File "/usr/local/lib/python3.6/threading.py", line 242, in __exit__
+    def __exit__(self, *args):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1241, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-05-26 17:12:34,760] {taskinstance.py:1503} INFO - Marking task as UP_FOR_RETRY. dag_id=get_new_data, task_id=scrap_cnn, execution_date=20240518T000000, start_date=20240526T171109, end_date=20240526T171234
+[2024-05-26 17:12:35,013] {process_utils.py:66} INFO - Process psutil.Process(pid=177, status='terminated', exitcode=1, started='17:11:08') (177) terminated with exit code 1
