@@ -1,4 +1,4 @@
-<img width="228" alt="image" src="https://github.com/dbotuk/news_classifier_mlops/assets/32682272/4dff86e5-6db8-4fbb-977e-59a845e5b985"># News Classifier MLOps Project
+# News Classifier MLOps Project
 This is a MLOps course project. The main purpose of this project is not so much implementing the perfect news classifier as building architecture.
 
 ## Project Description:
