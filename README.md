@@ -7,7 +7,8 @@ Problem: Сlassification of news articles. It should help user to be able easily
 Objective: build a model to classify news articles into categories, which adapts to changes in news topics and language over time.
 
 ## High-Level Design:
-The system architecture diagram is presented below. 
+The system architecture diagram is presented below.
+
 <img width="468" alt="image" src="https://github.com/dbotuk/news_classifier_mlops/assets/32682272/49e059a7-55d4-41b7-861b-3bbc80cac5ea">
 
 It includes 5 main components: User API, ML Server, DB CRUD Server, News Loader, and Monitoring System. The user interacts with the system only via User API, which can call ML Server to classify any news article text. ML Server contains the model, which does the classification, the state of the model is stored in the separate storage. There is a Monitoring System, which permanently does the diagnostics of the model performance. When it underperforms the system triggers a retrain job, which first calls for loading new training data via News Loader and then triggers ML Server to retrain the model. News Loader works according to the ETL principle: first, it triggers the scrappers, which gather the news data from different sources, and then it does the preprocessing of the retrieved data, and finally, it calls DB CRUD Server to store these data inside the database. As expected, DB CRUD Server does all the basic operations with data inside the database. During the retraining ML Server calls DB CRUD Server for the training dataset and saves a new state inside the model storage.
@@ -17,9 +18,11 @@ BERT (Bidirectional Encoder Representations from Transformers) is a pre-trained 
 
 ## Data Requirements:
 The basic dataset consists of the data, which consists of 1490 news article texts of 5 classes with labels. The distribution of the classes is the following:
+
 <img width="312" alt="image" src="https://github.com/dbotuk/news_classifier_mlops/assets/32682272/6e10f9fb-4364-4aa6-a9b8-6648a888ca9f">
  
 The word clouds look like this:
+
 <img width="228" alt="image" src="https://github.com/dbotuk/news_classifier_mlops/assets/32682272/0b6fc8b2-1ecc-4680-bd71-2457fe902d3d">
 <img width="228" alt="image" src="https://github.com/dbotuk/news_classifier_mlops/assets/32682272/7190bcbf-1941-4e5d-84d3-c58c46a451b5">
 <img width="228" alt="image" src="https://github.com/dbotuk/news_classifier_mlops/assets/32682272/d59ea569-654b-4cf6-a53b-0e7a8cd33b5d">
